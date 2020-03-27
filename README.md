@@ -27,7 +27,8 @@ In order to code, you will (of course) require some software installed on your c
 You may or may have not heard of the stereotype that "programmers always use dark theme", meaning whenever programmers use an IDE, they tend to change the colour theme to something darker in order to not burn their eyes as badly. You can optionally do that by following these steps:
 1. In Wing 101, Open the menu **Edit -> Preferences**. You should see two dropdown menus titled "Display Language" and "Color Palette", as well as a checkbox labelled "Use Color Palette throughout the UI".
 
-    ![Preferences menu](preferences-setup.png)
+    ![Preferences menu](preferences-setup.PNG)
+
 2. Ensure that the "Use Color Palette throughout the UI" is checked, if it is not already.
 3. Click the "Color Palette" dropdown to see a variety of colour themes you can use. Select whichever one you want, then click "Apply". I highly suggest you use a theme with darker colours such as "Dracula", "One Dark", "Positronic", "Solarized - Dark", etc. You can try them out on your own.
 4. Click "OK" to close.
