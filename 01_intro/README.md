@@ -1,7 +1,7 @@
 # Lesson 1: Introduction, Variables, and Output
 
 ## Table of Contents
-
+  - [A few vocabulary terms you should know](#a-few-vocabulary-terms-you-should-know)
   - [Small tour around Wing 101](#small-tour-around-wing-101)
   - [Numbers and Basic Mathematical Operations](#numbers-and-basic-mathematical-operations)
   - [Variables](#variables)
@@ -10,6 +10,11 @@
 
 
 Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes writing code can be simple, sometimes it can get really complex. If you're new to programming, Python is one of the best starting languages as it is beginner friendly.
+
+## A few vocabulary terms you should know
+
+- The *syntax* of a language is like how the language is supposed to look, or, the "way we're allowed to express ideas". Think of it like English spelling and grammar: if it's incorrect, it's incomprehensible. Likewise, a syntax error in your code prevents your program from running as your computer doesn't know what it means.
+- *Semantics* is the "meaning of what we say". Semantic error occurs when an expression, though correct in terms of syntax, cannot be reduced to a value. For example, "The Sun digs hungrily" has correct syntax (spelling and grammar), but it makes no sense.
 
 ## Small tour around Wing 101
 
