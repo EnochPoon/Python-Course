@@ -17,7 +17,7 @@ So let's start off by taking you through a small exploration of your IDE:
 
 If you followed the setup, you may have ended up with a Wing looking like this:
 
-![Initial layout](init.png)
+![Initial layout](init.PNG)
 
 - The large area where you wrote `print("Hello, World")` is your **Editor** where you write all your code.
   - The thin vertical line in the middle is not "splitting" that area into two windows: it just serves as a guideline telling you that you are encouraged to not have code pass that line. For now you can ignore it.
@@ -154,7 +154,7 @@ print(a)
 Then, save your code somewhere in your computer (preferably create a new folder somewhere you can easily access just for Python code used in this course). Name your file `my_first_code.py` (Note that Python code always have the file extension `.py`).
 
 Next, run this code by clicking the large green Play button at the top. Wing should look somewhat like this (Notice the number 3 is printed in the interactions window as well):
-![3 is printed in the interactions window](myfirstcode.png)
+![3 is printed in the interactions window](myfirstcode.PNG)
 
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
