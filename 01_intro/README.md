@@ -115,7 +115,7 @@ _____
 
 Warning: if you want to assign a value to a variable, the variable name itself must be to the left of the equal sign. Therefore, the following expression is invalid:
 ```python
->>> a + 3 = 6
+>>> a + 3 = b
 ```
 
 Moreover, when naming a variable, names can only have letters, digits, and the underscore character `_`, and the first character cannot be a digit. Therefore `enoch_poon`, `enOCH11`, `my_var123`, etc. are valid, but not `-a`, `3d`, `r2.d2`, etc. Other **invalid** variable names include Python keywords (which you will learn later in this course) such as `if`, `while`, `for`, `in`, etc. On Wing, a Python keyword will be shown in bold and in a different colour. If that happens, then that means it's an invalid variable name.
@@ -159,12 +159,12 @@ Next, run this code by clicking the large green Play button at the top. Wing sho
 
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
-**Important note: While before we learned printing, you used the interactions window to *return* a value. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:**
+**Important note: When you used the interactions window to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:**
 ```
->>> 3
->>> print(3)
+>>> 3 + 5
+>>> print(3 + 5)
 ```
-**You will understand more of this later.**
+One of them simply evaluates an expression, while the other one prints to the console.
 
 
 **Self-study:** Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the interactions window (Note that sometimes nothing will be printed, and sometimes an error would be produced):
