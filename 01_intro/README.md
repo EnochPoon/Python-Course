@@ -70,6 +70,7 @@ Python also has three more operators:
     1
     >>> 6 % 3
     0
+    ```
 3. **`x ** y`** means `x` raised to the exponent of `y`. For example:
     ```python
     >>> 3 ** 2
