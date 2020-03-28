@@ -28,7 +28,7 @@ If you followed the setup, you may have ended up with a Wing looking like this:
 
 Let's start off by learning how to use the interactions window.
 
-We will start by learning how to use numbers and basic mathematical functions: `+` for addition, `-` for subtraction, `*` for multiplication, `/` for division. Type each of these lines below into the interactions window and determine what is returned after each line is entered (Do not type the characters `>>>`, as those are just to tell you to input something in the interactions window. Do not type in the `_____`; just type in the mathematical expression that follows each `>>>`)
+We will start by learning how to use numbers and basic mathematical functions: `+` for addition, `-` for subtraction, `*` for multiplication, `/` for division. Type each of these lines below into the interactions window and determine what is returned after each line is entered (Do not type the characters `>>>`, as those are just to tell you to input something in the interactions window. Do not type in the `_____` either, as those are just placeholders for the resulting values; just type in the mathematical expression that follows each `>>>`)
 
 ```python
 >>> 3 + 5
