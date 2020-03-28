@@ -9,7 +9,7 @@
   - [Exercise](#exercise)
 
 
-Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes, instructions could be simple, sometimes they could get really complex. If you're new to programming, Python is one of the best starting languages.
+Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes writing code can be simple, sometimes it can get really complex. If you're new to programming, Python is one of the best starting languages as it is beginner friendly.
 
 ## Small tour around Wing 101
 
