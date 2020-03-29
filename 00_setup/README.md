@@ -16,7 +16,7 @@ Programming, in its simplest form, is basically providing instructions for a com
 
 - This course is entirely made as an introduction to the field of programming.
 - The programming language used throughout the course is **Python 3**
-  - please note that **this course is not mainly about learning how to code in Python** (as there are a whole lot of features in the language, we cannot get through so much of it); instead, this course is mainly about **learning how to think like a programmer, using Python as the primary tool.** Therefore, this course would rather be similar to the style of a first-year computer science course.
+  - please note that **this course is not mainly about learning how to code in Python** (as there are a whole lot of features in the language, we cannot get through so much of it); instead, this course is mainly about **learning how to think like a programmer, using Python as the primary tool.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style.
 - Although this course is very beginner-focused, it may not necessarily mean that it is "easy". Becoming a better programmer requires a lot of logical thinking, and puzzle-solving skills. Therefore, if you think you are good at math, there is a higher chance that you can do better in programming. But if you are not so good at math, this course may be more challenging. However, I try my best to accomodate for both slow learners and fast learners through the form of many different exercises.
 
 ## Setup
