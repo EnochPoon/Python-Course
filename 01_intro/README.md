@@ -1,32 +1,19 @@
-# Lesson 1: Introduction, Variables, and Output
+# Lesson 1: Variables, and Output
 
 ## Table of Contents
   - [A few vocabulary terms you should know](#a-few-vocabulary-terms-you-should-know)
-  - [Small tour around Wing 101](#small-tour-around-wing-101)
   - [Numbers and Basic Mathematical Operations](#numbers-and-basic-mathematical-operations)
   - [Variables](#variables)
   - [Output](#output)
-  - [Exercise](#exercise)
-
-
-Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes writing code can be simple, sometimes it can get really complex. If you're new to programming, Python is one of the best starting languages as it is beginner friendly.
+  - [Exercise 1](#exercise-1)
+  - [More Built-in Functions](#more-built-in-functions)
+  - [Exercise 2](#exercise-2)
 
 ## A few vocabulary terms you should know
 
 - The *syntax* of a language is like how the language is supposed to look, or, the "way we're allowed to express ideas". Think of it like English spelling and grammar: if it's incorrect, it's incomprehensible. Likewise, a syntax error in your code prevents your program from running as your computer doesn't know what it means.
+  - The equivalent adverb is *syntactically* (e.g. *syntactically correct* means having correct syntax)
 - *Semantics* is the "meaning of what we say". Semantic error occurs when an expression, though correct in terms of syntax, cannot be reduced to a value. For example, "The Sun digs hungrily" has correct syntax (spelling and grammar), but it makes no sense.
-
-## Small tour around Wing 101
-
-So let's start off by taking you through a small exploration of your IDE:
-
-If you followed the setup, you may have ended up with a Wing looking like this:
-
-![Initial layout](init.PNG)
-
-- The large area where you wrote `print("Hello, World")` is your **Editor** where you write all your code.
-  - The thin vertical line in the middle is not "splitting" that area into two windows: it just serves as a guideline telling you that you are encouraged to not have code pass that line. For now you can ignore it.
-- The area at the bottom right is called your **interactions window**, which is used to evaluate single Python expressions one-by-one. We will be using that a lot in this course, especially for this first lesson.
 
 
 ## Numbers and Basic Mathematical Operations
@@ -224,7 +211,7 @@ One of them simply evaluates an expression, while the other one prints to the co
    ```
 
 
-## Exercise
+## Exercise 1
 
 Use the code template below:
 
@@ -248,3 +235,115 @@ And if you change the `radius` to 1, your output should be:
 3.14159
 ```
 etc.
+
+## More Built-in Functions
+
+In Python, there are other functions that you may use to return different values:
+1. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
+   ```python
+   >>> max(3, 6)
+   6
+   >>> max(4, -1)
+   4
+   >>> x = 1
+   >>> y = 100
+   >>> max(x, y)
+   100
+   >>> max(y, x) + 200
+   300
+   ```
+2. `min(a, b)` takes two numbers `a` and `b` and returns the lesser of the two numbers. For example:
+   ```python
+   >>> min(3, 6)
+   3
+   >>> min(4, -1)
+   -1
+   >>> x = 1
+   >>> y = 100
+   >>> min(x, y)
+   1
+   >>> min(y, x) + 200
+   201
+   ```
+
+Therefore, say you wanted to print the largest of three variables `x`, `y`, and `z`. A possible code solution could be:
+
+```python
+x = 10
+y = 5
+z = 18
+largest_xy = max(x, y)
+largest_3 = max(largest_xy, z)
+print(largest_3)
+```
+
+You can test this out on Wing by yourself. Try modifying the values of `x`, `y`, and `z` to any values of your choice.
+
+An alternative solution to this problem could also be:
+
+```python
+x = 10
+y = 5
+z = 18
+largest_3 = max(max(x, y), z)
+print(largest_3)
+```
+
+Or, another cool Python feature, the `max` and `min` functions can support more than two arguments:
+
+```python
+x = 10
+y = 5
+z = 18
+largest_3 = max(x, y, z)
+print(largest_3)
+```
+
+## Exercise 2:
+
+Use the code fragment below:
+
+```python
+a = 100
+b = 20
+c = 300
+
+middle = _______
+print(middle)
+```
+
+Write an expression for `middle` such that running this program prints the *middle number* of `a`, `b`, and `c`. For example, with the values of `a`, `b`, and `c` above, it should print:
+
+```
+100
+```
+
+However, if you modify the first three lines of your code to
+
+```python
+a = 20
+b = 100
+c = 101
+```
+
+Then running your program should print:
+
+```
+100
+```
+
+And if your first three lines were
+
+```
+a = -1
+b = -4
+c = -3
+```
+
+Then running your program should print:
+
+```
+-3
+```
+
+You may optionally create a new variable that returns something in terms of `a`, `b`, `c`, or some combination of them so that you can use it when computing `middle`. Again, this step is optional.
