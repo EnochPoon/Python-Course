@@ -49,7 +49,7 @@ If you followed the setup, you may have ended up with a Wing looking like this:
 
 - The large area where you wrote `print("Hello, World")` is your **Editor** where you write all your code.
   - The thin vertical line in the middle is not "splitting" that area into two windows: it just serves as a guideline telling you that you are encouraged to not have code pass that line. For now you can ignore it.
-- The area at the bottom right is called your **interactions window**, which is used to evaluate single Python expressions one-by-one. We will be using that a lot in this course, especially for the next lesson.
+- The area at the bottom right is called your **Python Shell**, which is used to interactively evaluate single Python expressions one-by-one. We will be using the shell a lot in this course, especially for the next lesson.
 
 
 [**Next Lesson**](../01_intro/README.md)

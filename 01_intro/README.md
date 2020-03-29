@@ -14,13 +14,13 @@
 - The *syntax* of a language is like how the language is supposed to look, or, the "way we're allowed to express ideas". Think of it like English spelling and grammar: if it's incorrect, it's incomprehensible. Likewise, a syntax error in your code prevents your program from running as your computer doesn't know what it means.
   - The equivalent adverb is *syntactically* (e.g. *syntactically correct* means having correct syntax)
 - *Semantics* is the "meaning of what we say". Semantic error occurs when an expression, though correct in terms of syntax, cannot be reduced to a value. For example, "The Sun digs hungrily" has correct syntax (spelling and grammar), but it makes no sense.
+- A *data type* is a possible "type" of value that can be used for computation. Examples of data types include: numbers, strings (sequences of characters), etc. You will learn more data types in later lessons.
 
+## Basic Mathematical Operations
 
-## Numbers and Basic Mathematical Operations
+Let's start off by learning how to use the Python Shell.
 
-Let's start off by learning how to use the interactions window.
-
-We will start by learning how to use numbers and basic mathematical functions: `+` for addition, `-` for subtraction, `*` for multiplication, `/` for division. Type each of these lines below into the interactions window and determine what is returned after each line is entered (Do not type the characters `>>>`, as those are just to tell you to input something in the interactions window. Do not type in the `_____` either, as those are just placeholders for the resulting values; just type in the mathematical expression that follows each `>>>`)
+We will start by learning how to use numbers and basic mathematical functions: `+` for addition, `-` for subtraction, `*` for multiplication, `/` for division. Type each of these lines below into the Python Shell and determine what is returned after each line is entered (Do not type the characters `>>>`, as those are just to tell you to input something in the shell. Do not type in the `_____` either, as those are just placeholders for the resulting values; just type in the mathematical expression that follows each `>>>`)
 
 ```python
 >>> 3 + 5
@@ -71,11 +71,25 @@ Python also has three more operators:
     0.0625
     ```
 
+A **string** is a "sequence of characters" that, in Python code, are surrounded by quotation marks (either single-quotations (apostrophes) or double quotations. It doesn't really matter in most cases):
+```python
+>>> 'some text'
+_____
+>>> "some text"
+_____
+>>> "adding-two-" + "words-together"
+_____
+```
+
+**Warning:** the string `"42"` is **not** the same as the number `42` because the data types are different.
+
+We will learn more about strings in-depth in a later lesson. For now, most of our examples will be using numbers.
+
 ## Variables
 
-Of course, sometimes you want to store certain numbers somewhere so you can reuse them for later. Just like in mathematics, Python allows for *variables* for that purpose. You can name your variables something like `a` or `b` or `enoch` or whatever, and assign them a value.
+Of course, sometimes you want to store certain values somewhere so you can reuse them for later. Just like in mathematics, Python allows for *variables* for that purpose. You can name your variables something like `a` or `b` or `enoch` or whatever, and assign them a value.
 
-Let's try that out in the interactions window (Note that when you define a variable with a new value, you will not see anything returned):
+Let's try that out in the shell (Note that when you define a variable with a new value, you will not see anything returned):
 
 ```python
 >>> a = 6
@@ -135,23 +149,36 @@ If you understand what's going on up in the above interactions, you can move on 
 | `a %= 5` | `a = a % 5`|
 | `a **= 5` | `a = a ** 5`|
 
+
+**Warning:** Guess what is returned from this interaction, then try entering it in the shell afterwards:
+```python
+>>> a = 5
+>>> b = a
+>>> a = 7
+>>> b
+_____
+```
+
+What's happening is that although the value of `a` changed after setting `b = a`, that does not mean that `b` will continue to have the same value of `a`. When we assigned `b = a`, that only means that `b` has the value of `a` **at that time**.
+
+
 ## Output
 
-**Printing**, in the world of programming, means sending text output to a "console". In Wing 101, the console is actually in your interactions window, but in some environments, it could be somewhere else. For now, we will stick with printing numbers.
+**Printing**, in the world of programming, means sending text output to a "console". In Wing 101, the console is actually in the shell, but in some environments, it could be somewhere else. For now, we will stick with printing numbers.
 
-This time, we will actually be writing code in the **editor** (Not the interactions window), where you can write and execute several Python expressions at once. Create a new Python file by clicking the blue paper icon at the top left (or Ctrl+N for Windows users, I'm pretty sure it would be Command+N for Mac users. Alternatively, if you still have the line `print("Hello World")` from when you did the setup, you can just get rid of that line instead of creating a new file), and paste the following lines of code in your editor:
+This time, we will actually be writing code in the **editor** (Not the shell), where you can write and execute several Python expressions at once. Create a new Python file by clicking the blue paper icon at the top left (or Ctrl+N for Windows users, I'm pretty sure it would be Command+N for Mac users. Alternatively, if you still have the line `print("Hello World")` from when you did the setup, you can just get rid of that line instead of creating a new file), and paste the following lines of code in your editor:
 ```python
 a = 3
 print(a)
 ```
 Then, save your code somewhere in your computer (preferably create a new folder somewhere you can easily access just for Python code used in this course). Name your file `my_first_code.py` (Note that Python code always have the file extension `.py`).
 
-Next, run this code by clicking the large green Play button at the top. Wing should look somewhat like this (Notice the number 3 is printed in the interactions window as well):
-![3 is printed in the interactions window](myfirstcode.PNG)
+Next, run this code by clicking the large green Play button at the top. Wing should look somewhat like this (Notice the number 3 is printed in the shell as well):
+![3 is printed in the shell](myfirstcode.PNG)
 
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
-**Important note: When you used the interactions window to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:**
+**Important note: When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:**
 ```
 >>> 3 + 5
 >>> print(3 + 5)
@@ -159,7 +186,7 @@ You just used the `print` function, which outputs whatever is passed inside the 
 One of them simply evaluates an expression, while the other one prints to the console.
 
 
-**Self-study:** Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the interactions window (Note that sometimes nothing will be printed, and sometimes an error would be produced):
+**Self-study:** Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
 
 1. ```python
    a = 3
