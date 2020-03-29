@@ -16,8 +16,10 @@ Programming, in its simplest form, is basically providing instructions for a com
 
 - This course is entirely made as an introduction to the field of programming.
 - The programming language used throughout the course is **Python 3**
-  - please note that **this course is not mainly about learning how to code in Python** (as there are a whole lot of features in the language, we cannot get through so much of it); instead, this course is mainly about **learning how to think like a programmer, using Python as the primary tool.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style.
-- Although this course is very beginner-focused, it may not necessarily mean that it is "easy". Becoming a better programmer requires a lot of logical thinking, and puzzle-solving skills. Therefore, if you think you are good at math, there is a higher chance that you can do better in programming. But if you are not so good at math, this course may be more challenging. However, I try my best to accomodate for both slow learners and fast learners through the form of many different exercises.
+  - Please note that **this course is not mainly about learning how to code in Python** (as there are a whole lot of features in the language, we cannot get through so much of it); instead, this course is mainly about **learning how to think like a programmer, using Python as the primary tool.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style. However, proficiency in academic-style programming can allow you to learn its many applications much more efficiently.
+- Although this course is very beginner-focused, it may not necessarily mean that it is "easy". Becoming a better programmer requires a lot of logical thinking, and puzzle-solving skills. Therefore, if you think you are good at math, there is a higher chance that you can do better in programming. But if you are not so good at math, this course may be more challenging.
+- This course also includes a lot of exercises. Just like learning math, you cannot simply read notes, memorize them, and expect yourself to be a proficient programmer; this skill requires a lot of practice.
+  - There have been many cases where students may take several hours, sometimes over the span of days, just to solve a single problem. Stressing yourself too much from programming can be damaging to your health, so be sure you take breaks at certain times.
 
 ## Setup
 
@@ -49,7 +51,7 @@ If you followed the setup, you may have ended up with a Wing looking like this:
 
 - The large area where you wrote `print("Hello, World")` is your **Editor** where you write all your code.
   - The thin vertical line in the middle is not "splitting" that area into two windows: it just serves as a guideline telling you that you are encouraged to not have code pass that line. For now you can ignore it.
-- The area at the bottom right is called your **Python Shell**, which is used to interactively evaluate single Python expressions one-by-one. We will be using the shell a lot in this course, especially for the next lesson.
+- The area at the bottom right is called your **Python Shell** (or simply the *shell*), which is used to interactively evaluate single Python expressions one-by-one.
 
 
 [**Next Lesson**](../01_intro/README.md)

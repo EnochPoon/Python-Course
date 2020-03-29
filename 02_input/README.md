@@ -51,4 +51,4 @@ nor
 
 [repl.it](https://repl.it/) is a website created for the purpose of coding online and sharing code. It also includes many different courses created by the online community along with practice problems. I found a course that offers many different practice problems as good exercises for you, but it requires you to create an account first.
 
-**Once you create an account, go to [this course](https://repl.it/classroom/invite/oJYvLOo) and click "Take and Learn". Then, complete as many problems in that course as you can from 1.1 to 1.7 as well as 2.1 to 2.D. Note that I did not make these exercises myself.**
+Once you create an account, go to [this course](https://repl.it/classroom/invite/oJYvLOo) and click "Take and Learn". Then, complete as many assignment problems in that course as you can **from 1.1 to 1.7 as well as 2.1 to 2.D**. Note that I did not make these exercises myself.
