@@ -1,4 +1,4 @@
-# Introductory and Setup
+# Introduction and Setup
 Enoch Poon
 
 ## Table of Contents
