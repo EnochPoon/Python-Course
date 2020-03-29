@@ -1,4 +1,4 @@
-# Lesson 1: Variables, and Output
+# Lesson 1: Variables and Output
 
 ## Table of Contents
   - [A few vocabulary terms you should know](#a-few-vocabulary-terms-you-should-know)
@@ -75,7 +75,7 @@ Python also has three more operators:
 
 Of course, sometimes you want to store certain numbers somewhere so you can reuse them for later. Just like in mathematics, Python allows for *variables* for that purpose. You can name your variables something like `a` or `b` or `enoch` or whatever, and assign them a value.
 
-Let's try that out in the interactions window (Note that when you define a variable with a new value, you will not see anything returned)
+Let's try that out in the interactions window (Note that when you define a variable with a new value, you will not see anything returned):
 
 ```python
 >>> a = 6
@@ -94,7 +94,7 @@ _____
 _____
 ```
 
-You can also create more variables, some can be based on other variables, as well as re-assign values to variables
+You can also create more variables, some can be based on other variables, as well as re-assign values to variables:
 ```python
 >>> a = 6
 >>> b = a * 2
@@ -105,7 +105,7 @@ _____
 _____
 ```
 
-Warning: if you want to assign a value to a variable, the variable name itself must be to the left of the equal sign. Therefore, the following expression is invalid:
+**Warning**: if you want to assign a value to a variable, the variable name itself must be to the left of the equal sign. Therefore, the following expression is syntactically incorrect:
 ```python
 >>> a + 3 = b
 ```
@@ -240,6 +240,7 @@ etc.
 
 In Python, there are other functions that you may use to return different values:
 1. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
+
    ```python
    >>> max(3, 6)
    6
@@ -289,7 +290,7 @@ largest_3 = max(max(x, y), z)
 print(largest_3)
 ```
 
-Or, another cool Python feature, the `max` and `min` functions can support more than two arguments:
+Or, another cool Python feature, the `max` and `min` functions can both support more than two arguments:
 
 ```python
 x = 10
