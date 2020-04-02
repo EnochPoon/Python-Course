@@ -7,13 +7,14 @@ Enoch Poon
 0. [Introduction and Setup](00_setup/README.md)
 1. [Variables and Output](01_intro/README.md)
 2. [Input](02_input/README.md)
+3. [Conditional Statements](03_if/README.md)
+
 
 ## Future lesson topics (May be subject to change)
 
-3. Conditional statements
-4. Functions
-5. Loops
-6. Strings
-7. Lists
-8. Sets and Dictionaries
-9. Classes and Objects
+1. Functions
+2. Loops
+3. Strings
+4. Lists
+5. Sets and Dictionaries
+6. Classes and Objects
