@@ -178,7 +178,7 @@ Next, run this code by clicking the large green Play button at the top. Wing sho
 
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
-**Important note: When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:**
+**Important note:** When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
 ```
 >>> 3 + 5
 >>> print(3 + 5)
@@ -213,10 +213,13 @@ One of them simply evaluates an expression, while the other one prints to the co
    ```
 5. ```python
    a = 3
-   b = a + 400
+   b = a + 400 # You can also have empty lines anywhere in your code. They do nothing
+
    print(a)
+
    a = b
    print(a)
+
    a += 1
    print(a)
    ```

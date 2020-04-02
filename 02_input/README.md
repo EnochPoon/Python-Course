@@ -1,5 +1,11 @@
 # Lesson 2: Input
 
+## Table of Contents
+  - [The `input` function](#the-input-function)
+  - [Online Exercises](#online-exercises)
+
+
+## The `input` function
 So far, we have written simple programs that produces **output** to the console using the `print` function. What if we wanted the user to **input** some text to the console, and then let the program do something about it?
 
 If you have done the exercises in the [previous lesson](../01_intro/README.md), you provided "input" by setting different values for the initial variables. For example, in Exercise 1, your form of "input" was to modify the value of `radius` directly inside the code for the program to print something different.
@@ -24,7 +30,7 @@ b = int(input("Enter your second integer: "))
 print("The sum is", a + b)
 ```
 
-**Cool feature:** The input function **does not need to take in any arguments as prompts** (So you can literally just call it like `input()`, and it will simply take input without prompts:
+**Cool feature:** The input function **does not need to take in any arguments as prompts** (So you can literally just call it like `input()`, and it will simply take input **without prompts**:
 
 ```python
 a = int(input()) # Takes input, but prompts are given
@@ -49,6 +55,6 @@ nor
 
 ## Online Exercises
 
-[repl.it](https://repl.it/) is a website created for the purpose of coding online and sharing code. It also includes many different courses created by the online community along with practice problems. I found a course that offers many different practice problems as good exercises for you, but it requires you to create an account first.
+[repl.it](https://repl.it/) is a website created for the purpose of coding online and sharing code. It also includes many different courses created by the online community that include practice problems. I found a course that offers many different practice problems as good exercises for you, but it requires you to create an account first.
 
 Once you create an account, go to [this course](https://repl.it/classroom/invite/oJYvLOo) and click "Take and Learn". Then, complete as many assignment problems in that course as you can **from 1.1 to 1.7 as well as 2.1 to 2.D**. Note that I did not make these exercises myself.
