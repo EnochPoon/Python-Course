@@ -211,9 +211,15 @@ People are given two choices: the expression evaluates to one of:
 1. `-7 > 0 and (6 == 6 or "equal" == "equal")`, which evaluates to `False`
 2. `(-7 > 0 and 6 == 6) or "equal" == "equal"`, which evaluates to `True`
 
-Answer: the second choice. The `and` and `or` operators are read from left to right.
+Answer: the first choice. Python's boolean expressions use the following rules:
 
-These kinds of situations are rather more difficult to figure out, as many people get these kinds of mistakes and leave them unnoticed. If you want to ensure your intended logic is correct when using multiple logical operators, you are free to use brackets within them, just like the two choices above.
+For any boolean expression `X`,
+- `False and X` will always evaluate to False, no matter if `X` evaluates to True or False.
+- `True and X` will evaluate to `X`.
+- `True or X` will always evaluate to True, no matter if `X` evaluates to True or False.
+- `False or X` will evaluate to `X`.
+
+These kinds of situations are rather more difficult to figure out, as many people get these kinds of mistakes and leave them unnoticed. If you want to ensure your intended logic is correct when using multiple logical operators, you are free to use brackets within the expression.
 
 #### Exercise
 Use the code snippet below:
@@ -285,7 +291,7 @@ a = int(input())
 
 if a > 1000:
     print("That is a big integer! Decreasing the number...")
-      a -= 1000 # This is wrong!
+      a -= 1000 # This is wrong! The indentation is inconsistent with the line above
 
 print("Your number is:", a)
 ```
