@@ -214,9 +214,9 @@ People are given two choices: the expression evaluates to one of:
 Answer: the first choice. Python's boolean expressions use the following rules:
 
 For any boolean expression `X`,
-- `False and X` will always evaluate to False, no matter if `X` evaluates to True or False.
+- `False and X` will always evaluate to `False`, no matter if `X` evaluates to `True` or `False`.
 - `True and X` will evaluate to `X`.
-- `True or X` will always evaluate to True, no matter if `X` evaluates to True or False.
+- `True or X` will always evaluate to `True`, no matter if `X` evaluates to `True` or `False`.
 - `False or X` will evaluate to `X`.
 
 These kinds of situations are rather more difficult to figure out, as many people get these kinds of mistakes and leave them unnoticed. If you want to ensure your intended logic is correct when using multiple logical operators, you are free to use brackets within the expression.
