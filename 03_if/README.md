@@ -91,7 +91,7 @@ ______
 ______
 ```
 
-**Important note:** Do not confuse yourself between the `=` and `==` operators. The `=` operator is the **assignment operator** which sets a variable to a value; the `==` operator is the **equality operator** which returns `True` if the two values are equal, and `False` otherwise.
+<b class="important-note">Important Note:</b> Do not confuse yourself between the `=` and `==` operators. The `=` operator is the **assignment operator** which sets a variable to a value; the `==` operator is the **equality operator** which returns `True` if the two values are equal, and `False` otherwise.
 
 #### Examples
 
@@ -190,7 +190,7 @@ ______
 ______
 ```
 
-**Important Note:** Python's logical operators should not be treated the same way they are used in English. For example, If you want to check for "`a` and `b` are both positive", the Python expression is **not**
+<b class="important-note">Important Note:</b> Python's logical operators should not be treated the same way they are used in English. For example, If you want to check for "`a` and `b` are both positive", the Python expression is **not**
 ```python
 a and b > 0
 ```
@@ -284,7 +284,7 @@ print("Your number is:", a)
 Try running the program above by inputting a large number like `1055`. Then, try running the program again, but this time, input a smaller number like `5`. Compare the difference in output.
 
 
-**Important Note:** The statements inside an `if` statement must be indented **in a consistent manner**. You may use either spaces or tabs. Most people use one single tab. Either way, you must be consistent about it.
+<b class="important-note">Important Note:</b> The statements inside an `if` statement must be indented **in a consistent manner**. You may use either spaces or tabs. Most people use one single tab. Either way, you must be consistent about it.
 
 ```python
 a = int(input())
@@ -361,7 +361,7 @@ print("Your number is:", a)
 
 <br>
 
-**Self-study:** What would happen if you switch the order of the `if`/`elif`/`else` statements above and change your code to the code below?
+<b class="self-study">Self-study:</b> What would happen if you switch the order of the `if`/`elif`/`else` statements above and change your code to the code below?
 ```python
 a = int(input())
 
@@ -393,7 +393,7 @@ Why do you think that is? How does changing the order of conditions affect this 
 
 <br>
 
-**Self-study:** Consider the two Python programs below:
+<b class="self-study">Self-study:</b> Consider the two Python programs below:
 ```python
 a = int(input())
 if a > 0:

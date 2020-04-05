@@ -1,12 +1,12 @@
-# Introduction and Setup
-Enoch Poon
+<h1>Introduction and Setup</h1>
 
-## Table of Contents
+<h2>Table of Contents</h2>
 
-  - [What is Programming?](#what-is-programming)
-  - [About this course](#about-this-course)
-  - [Setup](#setup)
-    - [Optional Additional Setup](#optional-additional-setup)
+- [What is Programming?](#what-is-programming)
+- [About this course](#about-this-course)
+- [Setup](#setup)
+  - [Optional Additional Setup](#optional-additional-setup)
+- [Small tour around Wing 101](#small-tour-around-wing-101)
 
 ## What is Programming?
 

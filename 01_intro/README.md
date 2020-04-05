@@ -1,13 +1,13 @@
-# Lesson 1: Variables and Output
+<h1>Lesson 1: Variables and Output</h1>
 
-## Table of Contents
-  - [A few vocabulary terms you should know](#a-few-vocabulary-terms-you-should-know)
-  - [Numbers and Basic Mathematical Operations](#numbers-and-basic-mathematical-operations)
-  - [Variables](#variables)
-  - [Output](#output)
-  - [Exercise 1](#exercise-1)
-  - [More Built-in Functions](#more-built-in-functions)
-  - [Exercise 2](#exercise-2)
+<h2>Table of Contents</h2>
+- [A few vocabulary terms you should know](#a-few-vocabulary-terms-you-should-know)
+- [Basic Mathematical Operations](#basic-mathematical-operations)
+- [Variables](#variables)
+- [Output](#output)
+- [Exercise 1](#exercise-1)
+- [More Built-in Functions](#more-built-in-functions)
+- [Exercise 2](#exercise-2)
 
 ## A few vocabulary terms you should know
 
@@ -85,7 +85,7 @@ _____
 _____
 ```
 
-**Warning:** the string `"42"` is **not** the same as the number `42` because the data types are different.
+<b class="important-note">Important Note:</b> the string `"42"` is **not** the same as the number `42` because the data types are different.
 
 We will learn more about strings in-depth in a later lesson. For now, most of our examples will be using numbers.
 
@@ -130,7 +130,7 @@ _____
 
 Moreover, when naming a variable, names can only have letters, digits, and the underscore character `_`, and the first character cannot be a digit. Therefore `enoch_poon`, `enOCH11`, `my_var123`, etc. are valid, but not `-a`, `3d`, `r2.d2`, etc. Other **invalid** variable names include Python keywords (which you will learn later in this course) such as `if`, `while`, `for`, `in`, etc. On Wing, a Python keyword will be shown in bold and in a different colour. If that happens, then that means it's an invalid variable name.
 
-**Self-study:** What do you think is going on here?
+<b class="self-study">Self-study:</b> What do you think is going on here?
 ```python
 >>> b = 4
 >>> b = b + 6
@@ -154,7 +154,7 @@ If you understand what's going on up in the above interactions, you can move on 
 | `a **= 5` | `a = a ** 5`|
 
 
-**Warning:** Guess what is returned from this interaction, then try entering it in the shell afterwards:
+<b class="important-note">Important Note:</b> Guess what is returned from this interaction, then try entering it in the shell afterwards:
 ```python
 >>> a = 5
 >>> b = a
@@ -182,7 +182,7 @@ Next, run this code by clicking the large green Play button at the top. Wing sho
 
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
-**Important note:** When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
+<b class="important-note">Important Note:</b> When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
 ```
 >>> 3 + 5
 >>> print(3 + 5)
@@ -190,7 +190,7 @@ You just used the `print` function, which outputs whatever is passed inside the 
 One of them simply evaluates an expression, while the other one prints to the console.
 
 
-**Self-study:** Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
+<b class="self-study">Self-study:</b> Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
 
 1. ```python
    a = 3
@@ -371,7 +371,7 @@ largest_3 = max(x, y, z)
 print(largest_3)
 ```
 
-## Exercise 2:
+## Exercise 2
 
 Use the code fragment below:
 
