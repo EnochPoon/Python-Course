@@ -14,7 +14,11 @@
 - The *syntax* of a language is like how the language is supposed to look, or, the "way we're allowed to express ideas". Think of it like English spelling and grammar: if it's incorrect, it's incomprehensible. Likewise, a syntax error in your code prevents your program from running as your computer doesn't know what it means.
   - The equivalent adverb is *syntactically* (e.g. *syntactically correct* means having correct syntax)
 - *Semantics* is the "meaning of what we say". Semantic error occurs when an expression, though correct in terms of syntax, cannot be reduced to a value. For example, "The Sun digs hungrily" has correct syntax (spelling and grammar), but it makes no sense.
-- A *data type* is a possible "type" of value that can be used for computation. Examples of data types include: numbers, strings (sequences of characters), etc. You will learn more data types in later lessons.
+- A *data type* is a possible "type" of value that can be used for computation. Examples of data types include: 
+  - **Numbers**. These can be separated into **integers** (such as 5, 0, -44, etc.) and **floats** (rational numbers such as 4.5, 0.1, -4.555, etc.). Note that an integer counts as a float as well.
+  - **Strings**. These are sequences of characters (such as `"hello"`, `"python is cool"`, etc.). You will learn more about strings in-depth in a later lesson.
+  
+  You will learn more data types in later lessons.
 
 ## Basic Mathematical Operations
 
@@ -77,7 +81,7 @@ A **string** is a "sequence of characters" that, in Python code, are surrounded 
 _____
 >>> "some text"
 _____
->>> "adding-two-" + "words-together"
+>>> "adding-two-" + "strings-together"
 _____
 ```
 
@@ -269,7 +273,42 @@ etc.
 ## More Built-in Functions
 
 In Python, there are other functions that you may use to return different values:
-1. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
+1. `abs(n)` takes a number `n` and returns the **absolute value** of `n`.
+   ```python
+   >>> x = 10
+   >>> abs(x)
+   10
+   >>> y = -5
+   >>> abs(y)
+   5
+   >>> abs(x) + abs(y)
+   15
+   >>> abs(x + y)
+   5
+   ```
+2. `int(x)` takes either a number or a string `x` and returns its integer representation of `x`:
+     - If `x` is a number, `int(x)` returns the same number but **without any digits after the decimal point** (Note that this **does not mean** `x` is rounded to the nearest unit; it instead returns `x` **rounded towards 0**. Therefore it rounds down for positive numbers and rounds up for negative numbers)
+     - If `x` is a string, `int(x)` returns `x` represented as an integer. Note that `x` cannot be a string that includes a decimal point.
+   ```python
+   >>> int(3.4)
+   3
+   >>> int(4)
+   4
+   >>> int(-5.9)
+   -5
+   >>> int(9.99)
+   9
+   >>> int("100")
+   100
+   >>> int("-333")
+   -333
+   >>> int("3.14159")
+   <ERROR>
+   >>> int("anything else")
+   <ERROR>
+   ```
+
+3. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
 
    ```python
    >>> max(3, 6)
@@ -283,7 +322,8 @@ In Python, there are other functions that you may use to return different values
    >>> max(y, x) + 200
    300
    ```
-2. `min(a, b)` takes two numbers `a` and `b` and returns the lesser of the two numbers. For example:
+
+4. `min(a, b)` takes two numbers `a` and `b` and returns the lesser of the two numbers. For example:
    ```python
    >>> min(3, 6)
    3
