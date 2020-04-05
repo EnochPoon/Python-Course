@@ -15,7 +15,7 @@
   - The equivalent adverb is *syntactically* (e.g. *syntactically correct* means having correct syntax)
 - *Semantics* is the "meaning of what we say". Semantic error occurs when an expression, though correct in terms of syntax, cannot be reduced to a value. For example, "The Sun digs hungrily" has correct syntax (spelling and grammar), but it makes no sense.
 - A *data type* is a possible "type" of value that can be used for computation. Examples of data types include: 
-  - **Numbers**. These can be separated into **integers** (such as 5, 0, -44, etc.) and **floats** (rational numbers such as 4.5, 0.1, -4.555, etc.). Note that an integer counts as a float as well.
+  - **Numbers**. The two types of numbers are **integers** (such as 5, 0, -44, etc.) and **floats** (rational numbers such as 4.5, 0.1, -4.555, etc.). Note that an integer counts as a float as well (i.e. 5 is a float because 5 can be represented as 5.0).
   - **Strings**. These are sequences of characters (such as `"hello"`, `"python is cool"`, etc.). You will learn more about strings in-depth in a later lesson.
   
   You will learn more data types in later lessons.
@@ -289,6 +289,7 @@ In Python, there are other functions that you may use to return different values
 2. `int(x)` takes either a number or a string `x` and returns its integer representation of `x`:
      - If `x` is a number, `int(x)` returns the same number but **without any digits after the decimal point** (Note that this **does not mean** `x` is rounded to the nearest unit; it instead returns `x` **rounded towards 0**. Therefore it rounds down for positive numbers and rounds up for negative numbers)
      - If `x` is a string, `int(x)` returns `x` represented as an integer. Note that `x` cannot be a string that includes a decimal point.
+
    ```python
    >>> int(3.4)
    3
@@ -303,9 +304,9 @@ In Python, there are other functions that you may use to return different values
    >>> int("-333")
    -333
    >>> int("3.14159")
-   <ERROR>
+   ERROR
    >>> int("anything else")
-   <ERROR>
+   ERROR
    ```
 
 3. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
