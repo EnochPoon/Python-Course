@@ -14,7 +14,8 @@
     - [Example](#example)
   - [The `else` statement](#the-else-statement)
   - [The `elif` statement](#the-elif-statement)
-  - [Exercises](#exercises)
+  - [Nested conditional statements](#nested-conditional-statements)
+- [Online Exercises](#online-exercises)
 
 
 ## Introduction to Booleans
@@ -422,8 +423,43 @@ print("The number is:", a)
 
 Notice the very subtle difference between the two programs. Though the difference is subtle in the code, it makes a huge difference when running them. For each program, input a single integer, preferably not `0`, to see the difference. Understand why the results are different.
 
-### Exercises
+### Nested conditional statements
 
-You may return to [the repl.it course](https://repl.it/student/classrooms/183950). Complete problems 3.1 to 3.O ("3.O" ends with the letter `O`, not the number `0`).
+Recall that an `elif` statement checks another condition **only when the previous condition fails**. However, there could be cases where we want to check for more conditions **only when the previous condition passes**. To do this, we can consider using *nested conditional statements*.
 
+A *nested conditional statement* is basically a conditional statement inside of another conditional statement. Such statements will be executed **only if the outer condition passes**. See the example below:
 
+```python
+x = int(input())
+
+if x > 10:
+    # The next few lines are executed only if x > 10.
+    if x < 90:
+        print("The number is between 10 and 90")
+    else:
+        print("The number is at least 90")
+else:
+    # The next line is executed only if x > 10 fails.
+    print("The number is less than or equal to 10")
+```
+
+Try running the above program with different inputs. Compare results when the input is `40` versus `91` versus `8`.
+
+An equivalent program without nested conditions would look like this:
+
+```python
+x = int(input())
+
+if x > 10 and x < 90:
+    print("The number is between 10 and 90")
+elif x > 10 and not x < 90:
+    print("The number is at least 90"):
+else:
+    print("The number is less than or equal to 10")
+```
+
+<b class="important-note">Important Note:</b> If you look at the above code with the nested conditional statements, you notice that everything inside the nested if/else statements (`if x < 90:` ... `else:` ...) is also indented one extra tab ahead. Therefore, the print statements inside those nested conditional statements must be indented twice in total. Again, indentation really matters here.
+
+## Online Exercises
+
+You may return to [the repl.it course](https://repl.it/student/classrooms/183950). Complete problems **3.1 to 3.O** ("3.O" ends with the letter `O`, not the number `0`).
