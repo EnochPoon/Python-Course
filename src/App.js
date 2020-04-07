@@ -45,7 +45,7 @@ class App extends Component {
                 </Route>
               ))
             }
-            <Route path="/">
+            <Route exact path="/">
               <HomeView />
             </Route>
           </Switch>
