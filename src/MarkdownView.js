@@ -50,7 +50,8 @@ class MarkdownView extends Component {
                 // set up anchors to target=_blank
                 const anchors = mdWrapper.querySelectorAll('a');
                 for (const anchor of anchors) {
-                    if (anchor.href.startsWith("http")) {
+                    const url = new URL(anchor.href);
+                    if (url.origin !== window.location.origin) {
                         anchor.target = "_blank"
                     }
                 }
