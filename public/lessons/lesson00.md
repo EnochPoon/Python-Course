@@ -16,8 +16,8 @@ Programming, in its simplest form, is basically providing instructions for a com
 
 - This course is entirely made as an introduction to the field of programming.
 - The programming language used throughout the course is **Python 3**
-  - Please note that **this course is not mainly about learning how to code in Python** (as there are a whole lot of features in the language, we cannot get through so much of it); instead, this course is mainly about **learning how to think like a programmer, using Python as the primary tool.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style. However, proficiency in academic-style programming can allow you to learn its many applications much more efficiently.
-- Although this course is very beginner-focused, it may not necessarily mean that it is "easy". Becoming a better programmer requires a lot of logical thinking, and puzzle-solving skills. Therefore, if you think you are good at math, there is a higher chance that you can do better in programming. But if you are not so good at math, this course may be more challenging.
+  - While this course does teach a decent amount about how to code in Python, please note that **this course is rather more focused on learning how to think like a programmer.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style. However, proficiency in academic-style programming can allow you to learn its many applications as well as other programming languages much more efficiently.
+- Although this course is very beginner-focused, it may not necessarily mean that it is "easy". The path to becoming a better programmer requires a lot of logical thinking, and puzzle-solving skills. Therefore, if you think you are good at math, there is a higher chance that you can do better in this course. But if you are not so good at math, this course may be more challenging.
 - This course also includes a lot of exercises. Just like learning math, you cannot simply read notes, memorize them, and expect yourself to be a proficient programmer; this skill requires a lot of practice.
   - There have been many cases where students may take several hours, sometimes over the span of days, just to solve a single problem. Stressing yourself too much from programming can be damaging to your health, so be sure you take breaks at certain times.
 
@@ -33,9 +33,10 @@ In order to code, you will (of course) require some software installed on your c
 ### Optional Additional Setup
 
 You may or may have not heard of the stereotype that "programmers always use dark theme", meaning whenever programmers use an IDE, they tend to change the colour theme to something darker in order to not burn their eyes as badly. You can optionally do that by following these steps:
-1. In Wing 101, Open the menu **Edit -> Preferences**. You should see two dropdown menus titled "Display Language" and "Color Palette", as well as a checkbox labelled "Use Color Palette throughout the UI".
 
-    ![Preferences menu](preferences-setup.PNG)
+1. In Wing 101, Open the menu **Edit -> Preferences**. You should see two dropdown menus titled "Display Language" and "Color Palette", as well as a checkbox labelled "Use Color Palette throughout the UI".
+   
+   ![Preferences menu](images/00-preferences-setup.PNG)
 
 2. Ensure that the "Use Color Palette throughout the UI" is checked, if it is not already.
 3. Click the "Color Palette" dropdown to see a variety of colour themes you can use. Select whichever one you want, then click "Apply". I highly suggest you use a theme with darker colours such as "Dracula", "One Dark", "Positronic", "Solarized - Dark", etc. You can try them out on your own.
@@ -47,11 +48,9 @@ So let's start off by taking you through a small exploration of your IDE:
 
 If you followed the setup, you may have ended up with a Wing looking like this:
 
-![Initial layout](init.PNG)
+![Initial layout](images/00-init.PNG)
 
 - The large area where you wrote `print("Hello, World")` is your **Editor** where you write all your code.
   - The thin vertical line in the middle is not "splitting" that area into two windows: it just serves as a guideline telling you that you are encouraged to not have code pass that line. For now you can ignore it.
 - The area at the bottom right is called your **Python Shell** (or simply the *shell*), which is used to interactively evaluate single Python expressions one-by-one.
 
-
-[**Next Lesson**](../01_intro/README.md)

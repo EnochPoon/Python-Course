@@ -1,4 +1,4 @@
-<h1>Conditional statements</h1>
+<h1>Lesson 3: Conditional statements</h1>
 
 <h2>Table of Contents</h2>
 
@@ -17,6 +17,7 @@
   - [Nested conditional statements](#nested-conditional-statements)
 - [Online Exercises](#online-exercises)
 
+In the past, you have always written code where each line is run one-by-one. However, in more complex cases, there may be times when you don't want to do that. In some cases, you may want to run certain lines of code **only under some conditions**. This lesson will teach you how to do that in Python. We will first have to go through understanding *booleans* before we learn to write these conditional statements.
 
 ## Introduction to Booleans
 
@@ -92,7 +93,7 @@ ______
 ______
 ```
 
-<b class="important-note">Important Note:</b> Do not confuse yourself between the `=` and `==` operators. The `=` operator is the **assignment operator** which sets a variable to a value; the `==` operator is the **equality operator** which returns `True` if the two values are equal, and `False` otherwise.
+<b class="important-note" /> Do not confuse yourself between the `=` and `==` operators. The `=` operator is the **assignment operator** which sets a variable to a value; the `==` operator is the **equality operator** which returns `True` if the two values are equal, and `False` otherwise.
 
 #### Examples
 
@@ -191,11 +192,11 @@ ______
 ______
 ```
 
-<b class="important-note">Important Note:</b> Python's logical operators should not be treated the same way they are used in English. For example, If you want to check for "`a` and `b` are both positive", the Python expression is **not**
+<b class="important-note" /> Python's logical operators should not be treated the same way they are used in English. For example, If you want to check for "`a` and `b` are both positive", the Python expression is **not**
 ```python
 a and b > 0
 ```
-Instad, it must be:
+Instead, it must be:
 ```python
 a > 0 and b > 0
 ```
@@ -209,10 +210,11 @@ What if you had the expression below?
 -7 > 0 and 6 == 6 or "equal" == "equal"
 ```
 People are given two choices: the expression evaluates to one of:
+
 1. `-7 > 0 and (6 == 6 or "equal" == "equal")`, which evaluates to `False`
 2. `(-7 > 0 and 6 == 6) or "equal" == "equal"`, which evaluates to `True`
 
-Answer: the first choice. Python's boolean expressions use the following rules:
+Answer: the <b>first</b> choice is the equivalent expression. Python's boolean expressions use the following rules:
 
 For any boolean expression `X`,
 - `False and X` will always evaluate to `False`, no matter if `X` evaluates to `True` or `False`.
@@ -222,32 +224,40 @@ For any boolean expression `X`,
 
 These kinds of situations are rather more difficult to figure out, as many people get these kinds of mistakes and leave them unnoticed. If you want to ensure your intended logic is correct when using multiple logical operators, you are free to use brackets within the expression.
 
+<b class="important-note" />The way Python processes these complex boolean expressions may not be the same in other programming languages. If you're ever learning another programming language, make sure you also understand the way they look at these boolean expressions.
+
 #### Exercise
 Use the code snippet below:
+
 ```python
 a = int(input())
 sign = input()
 ```
+
 Write a program that takes an integer followed by a string as input. We will assume the value of `sign` must be either the string `"P"` or `"N"`. If `sign` is equal to `"P"`, print `True` if the integer is positive, and `False` otherwise; if `sign` is equal to `"N"`, print `True` if the integer is negative, and `False` otherwise. Note that 0 is neither positive nor negative.
 
 **Sample Input 1**
+
 ```
 30
 P
 ```
 
 **Sample Output 1**
+
 ```
 True
 ```
 
 **Sample Input 2**
+
 ```
 25
 N
 ```
 
 **Sample Output 2**
+
 ```
 False
 ```
@@ -285,7 +295,7 @@ print("Your number is:", a)
 Try running the program above by inputting a large number like `1055`. Then, try running the program again, but this time, input a smaller number like `5`. Compare the difference in output.
 
 
-<b class="important-note">Important Note:</b> The statements inside an `if` statement must be indented **in a consistent manner**. You may use either spaces or tabs. Most people use one single tab. Either way, you must be consistent about it.
+<b class="important-note" /> The statements inside an `if` statement must be indented **in a consistent manner**. You may use either spaces or tabs. Most people use one single tab. Either way, you must be consistent about it.
 
 ```python
 a = int(input())
@@ -362,7 +372,8 @@ print("Your number is:", a)
 
 <br>
 
-<b class="self-study">Self-study:</b> What would happen if you switch the order of the `if`/`elif`/`else` statements above and change your code to the code below?
+<b class="self-study" /> What would happen if you switch the order of the `if`/`elif`/`else` statements above and change your code to the code below?
+
 ```python
 a = int(input())
 
@@ -383,18 +394,18 @@ else:
 
 print("Your number is:", a)
 ```
+
 You will notice that no matter what integer you input for the above program, none of the lines below will ever be printed.
-  - ```
-    That is a VERY big integer! Decreasing the number...
-    ```
-  - ```
-    That is a VERY low integer! Increasing the number...
-    ```
+
+  - `That is a VERY big integer! Decreasing the number...`
+  - `That is a VERY low integer! Increasing the number...`
+
+
 Why do you think that is? How does changing the order of conditions affect this program?
 
 <br>
 
-<b class="self-study">Self-study:</b> Consider the two Python programs below:
+<b class="self-study" /> Consider the two Python programs below. Notice the very subtle difference (an `if` statement and an `elif` statement vs. two `if` statements):
 ```python
 a = int(input())
 if a > 0:
@@ -421,7 +432,7 @@ if a > 100:
 print("The number is:", a)
 ```
 
-Notice the very subtle difference between the two programs. Though the difference is subtle in the code, it makes a huge difference when running them. For each program, input a single integer, preferably not `0`, to see the difference. Understand why the results are different.
+Though the difference is subtle in the code, it makes a huge difference when running them. For each program, input a single integer, preferably not `0`, to see the difference. Understand why the results are different.
 
 ### Nested conditional statements
 
@@ -458,7 +469,7 @@ else:
     print("The number is less than or equal to 10")
 ```
 
-<b class="important-note">Important Note:</b> If you look at the above code with the nested conditional statements, you notice that everything inside the nested if/else statements (`if x < 90:` ... `else:` ...) is also indented one extra tab ahead. Therefore, the print statements inside those nested conditional statements must be indented twice in total. Again, indentation really matters here.
+<b class="important-note" /> If you look at the above code with the nested conditional statements, you notice that everything inside the nested if/else statements (`if x < 90:` ... `else:` ...) is also indented one extra tab ahead. Therefore, the print statements inside those nested conditional statements must be indented twice in total. Again, indentation really matters here.
 
 ## Online Exercises
 

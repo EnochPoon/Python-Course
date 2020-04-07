@@ -1,6 +1,7 @@
 <h1>Lesson 1: Variables and Output</h1>
 
 <h2>Table of Contents</h2>
+
 - [A few vocabulary terms you should know](#a-few-vocabulary-terms-you-should-know)
 - [Basic Mathematical Operations](#basic-mathematical-operations)
 - [Variables](#variables)
@@ -47,6 +48,7 @@ _____
 Notice that the order of operations (BEDMAS) applies when computing these values.
 
 Python also has three more operators:
+
 1. **`x // y`** means "floor division". It calculates the **closest integer below or equal to `x / y`**. It is good to note that if `x` and `y` are positive, `x // y` means `x / y` but **without the remainder**. For example:
     ```python
     >>> 9 / 2
@@ -60,14 +62,14 @@ Python also has three more operators:
     >>> 4 // 2
     2
     ```
-2. **`x % y`**, known as `x` mod `y`, returns the remainder when `x` is divided by `y`. For example:
+2. **`x % y`**, known as `x` *mod* `y`, returns the remainder when `x` is divided by `y`. For example:
     ```python
     >>> 9 % 2
     1
     >>> 6 % 3
     0
     ```
-3. **`x ** y`** means `x` raised to the exponent of `y`. For example:
+3. <b>`x ** y`</b> means `x` raised to the exponent of `y`. For example:
     ```python
     >>> 3 ** 2
     9
@@ -85,7 +87,7 @@ _____
 _____
 ```
 
-<b class="important-note">Important Note:</b> the string `"42"` is **not** the same as the number `42` because the data types are different.
+<b class="important-note" /> the string `"42"` is **not** the same as the number `42` because the data types are different.
 
 We will learn more about strings in-depth in a later lesson. For now, most of our examples will be using numbers.
 
@@ -128,9 +130,9 @@ _____
 >>> a + 3 = b
 ```
 
-Moreover, when naming a variable, names can only have letters, digits, and the underscore character `_`, and the first character cannot be a digit. Therefore `enoch_poon`, `enOCH11`, `my_var123`, etc. are valid, but not `-a`, `3d`, `r2.d2`, etc. Other **invalid** variable names include Python keywords (which you will learn later in this course) such as `if`, `while`, `for`, `in`, etc. On Wing, a Python keyword will be shown in bold and in a different colour. If that happens, then that means it's an invalid variable name.
+Moreover, when naming a variable, names can only have letters, digits, and the underscore character `_`, and the first character cannot be a digit. Therefore `enoch_poon`, `enOCH11`, `my_var123`, etc. are valid, but `-a`, `3d`, `r2.d2`, etc. are **invalid**. Other **invalid** variable names include Python keywords (which you will learn later in this course) such as `if`, `while`, `for`, `in`, etc. On Wing, a Python keyword will be shown in bold and in a different colour. If that happens, then that means it's an invalid variable name.
 
-<b class="self-study">Self-study:</b> What do you think is going on here?
+<b class="self-study" /> What do you think is going on here?
 ```python
 >>> b = 4
 >>> b = b + 6
@@ -154,7 +156,8 @@ If you understand what's going on up in the above interactions, you can move on 
 | `a **= 5` | `a = a ** 5`|
 
 
-<b class="important-note">Important Note:</b> Guess what is returned from this interaction, then try entering it in the shell afterwards:
+<b class="important-note" /> Guess what is returned from this interaction. Is the final value of `b` equal to 5 or 7? After you made your guess, try entering it in the shell:
+
 ```python
 >>> a = 5
 >>> b = a
@@ -178,11 +181,11 @@ print(a)
 Then, save your code somewhere in your computer (preferably create a new folder somewhere you can easily access just for Python code used in this course). Name your file `my_first_code.py` (Note that Python code always have the file extension `.py`).
 
 Next, run this code by clicking the large green Play button at the top. Wing should look somewhat like this (Notice the number 3 is printed in the shell as well):
-![3 is printed in the shell](myfirstcode.PNG)
+![3 is printed in the shell](images/01-myfirstcode.PNG)
 
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
-<b class="important-note">Important Note:</b> When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
+<b class="important-note" /> When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
 ```
 >>> 3 + 5
 >>> print(3 + 5)
@@ -190,7 +193,7 @@ You just used the `print` function, which outputs whatever is passed inside the 
 One of them simply evaluates an expression, while the other one prints to the console.
 
 
-<b class="self-study">Self-study:</b> Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
+<b class="self-study" /> Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
 
 1. ```python
    a = 3

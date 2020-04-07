@@ -4,10 +4,10 @@ Enoch Poon
 
 ## Table of Contents
 
-0. [Introduction and Setup](00_setup/README.md)
-1. [Variables and Output](01_intro/README.md)
-2. [Input](02_input/README.md)
-3. [Conditional Statements](03_if/README.md)
+1. [Introduction and Setup](/00)
+2. [Variables and Output](01_intro/README.md)
+3. [Input](02_input/README.md)
+4. [Conditional Statements](03_if/README.md)
 
 
 ## Future lesson topics (May be subject to change)
