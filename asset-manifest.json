@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Python-Course/static/css/main.e3e21ef0.chunk.css",
+    "main.js": "/Python-Course/static/js/main.3052d48f.chunk.js",
+    "main.js.map": "/Python-Course/static/js/main.3052d48f.chunk.js.map",
+    "runtime-main.js": "/Python-Course/static/js/runtime-main.e54eb8bd.js",
+    "runtime-main.js.map": "/Python-Course/static/js/runtime-main.e54eb8bd.js.map",
+    "static/js/2.9ed94930.chunk.js": "/Python-Course/static/js/2.9ed94930.chunk.js",
+    "static/js/2.9ed94930.chunk.js.map": "/Python-Course/static/js/2.9ed94930.chunk.js.map",
+    "index.html": "/Python-Course/index.html",
+    "precache-manifest.6fc0394710c5a73ffb7940fbe6af0948.js": "/Python-Course/precache-manifest.6fc0394710c5a73ffb7940fbe6af0948.js",
+    "service-worker.js": "/Python-Course/service-worker.js",
+    "static/css/main.e3e21ef0.chunk.css.map": "/Python-Course/static/css/main.e3e21ef0.chunk.css.map",
+    "static/js/2.9ed94930.chunk.js.LICENSE.txt": "/Python-Course/static/js/2.9ed94930.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e54eb8bd.js",
+    "static/js/2.9ed94930.chunk.js",
+    "static/css/main.e3e21ef0.chunk.css",
+    "static/js/main.3052d48f.chunk.js"
+  ]
+}
