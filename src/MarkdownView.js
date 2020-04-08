@@ -4,15 +4,16 @@ import ReactMarkdown from 'react-markdown';
 import CodeBlock from './CodeBlock';
 import { connect } from 'react-redux';
 import { setCurLessonNum } from './actions';
+import { doubleDigit } from './constants';
 
 class MarkdownView extends Component {
     static propTypes = {
-        path: PropTypes.string.isRequired,
         lessonNum: PropTypes.number.isRequired
     }
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        this.mdPath = `./lessons/lesson${doubleDigit(this.props.lessonNum)}.md`;
         this.state = {
             md: ""
         };
@@ -27,10 +28,9 @@ class MarkdownView extends Component {
     }
 
     componentDidMount() {
-        fetch(this.props.path, { mode: 'no-cors' })
+        fetch(this.mdPath, { mode: 'no-cors' })
         .then(response => response.text())
         .then(data => {
-            console.log(data);
             this.setState({ md: data }, () => {
                 // Set the header id's
                 const mdWrapper = document.getElementById('md-wrapper');
@@ -57,10 +57,9 @@ class MarkdownView extends Component {
                 }
             });
         }).catch(e => {
-            this.setState({ md: String(e) });
+            this.setState({ md: "# ERROR! Invalid url" });
         });
-
-        this.props.setCurLessonNum(this.props.lessonNum);        
+        this.props.setCurLessonNum(this.props.lessonNum);
     }
 }
 

@@ -1,7 +1,7 @@
 import { SET_CUR_LESSON_NUM } from "../actions";
 
 const initialState = {
-    curLesson: 1
+    curLesson: -1
 };
 
 export function rootReducer(state = initialState, action) {

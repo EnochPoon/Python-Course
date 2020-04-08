@@ -20,15 +20,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      md: "",
-      curLessonNum: -1
+      md: ""
     }
-  }
-
-  componentDidMount() {
-    const path = window.location.pathname;
-    if (path === "/") this.props.setCurLessonNum(-1);
-    else this.props.setCurLessonNum(parseInt(path.split("/")[1]));
   }
 
   render() {
@@ -41,12 +34,17 @@ class App extends Component {
             {
               [...Array(LESSON_TITLES.length).keys()].map(num => (
                 <Route path={`/${doubleDigit(num)}`} key={num}>
-                  <MarkdownView path={`./lessons/lesson${doubleDigit(num)}.md`} lessonNum={parseInt(num)} />
+                  <MarkdownView lessonNum={num} />
                 </Route>
               ))
             }
             <Route exact path="/">
               <HomeView />
+            </Route>
+            <Route path="/">
+              <div className="md-wrapper">
+                <h1>ERROR: bad URL</h1>
+              </div>
             </Route>
           </Switch>
         </div>
