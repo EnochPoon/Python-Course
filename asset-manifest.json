@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Python-Course/static/css/main.c5511e04.chunk.css",
+    "main.css": "/Python-Course/static/css/main.9986cecb.chunk.css",
     "main.js": "/Python-Course/static/js/main.61284e4c.chunk.js",
     "main.js.map": "/Python-Course/static/js/main.61284e4c.chunk.js.map",
     "runtime-main.js": "/Python-Course/static/js/runtime-main.e54eb8bd.js",
@@ -8,15 +8,15 @@
     "static/js/2.4bda50be.chunk.js": "/Python-Course/static/js/2.4bda50be.chunk.js",
     "static/js/2.4bda50be.chunk.js.map": "/Python-Course/static/js/2.4bda50be.chunk.js.map",
     "index.html": "/Python-Course/index.html",
-    "precache-manifest.de54ed1d465efd89f72013c44747db01.js": "/Python-Course/precache-manifest.de54ed1d465efd89f72013c44747db01.js",
+    "precache-manifest.f9775986df9ceaa295c01add3757a5b8.js": "/Python-Course/precache-manifest.f9775986df9ceaa295c01add3757a5b8.js",
     "service-worker.js": "/Python-Course/service-worker.js",
-    "static/css/main.c5511e04.chunk.css.map": "/Python-Course/static/css/main.c5511e04.chunk.css.map",
+    "static/css/main.9986cecb.chunk.css.map": "/Python-Course/static/css/main.9986cecb.chunk.css.map",
     "static/js/2.4bda50be.chunk.js.LICENSE.txt": "/Python-Course/static/js/2.4bda50be.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e54eb8bd.js",
     "static/js/2.4bda50be.chunk.js",
-    "static/css/main.c5511e04.chunk.css",
+    "static/css/main.9986cecb.chunk.css",
     "static/js/main.61284e4c.chunk.js"
   ]
 }
