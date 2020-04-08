@@ -8,7 +8,7 @@
 ## The `input` function
 So far, we have written simple programs that produces **output** to the console using the `print` function. What if we wanted the user to **input** some text to the console, and then let the program do something about it?
 
-If you have done the exercises in the [previous lesson](../01_intro/README.md), you provided "input" by setting different values for the initial variables. For example, in Exercise 1, your form of "input" was to modify the value of `radius` directly inside the code for the program to print something different.
+If you have done the exercises in the previous lesson, you provided "input" by setting different values for the initial variables. For example, in Exercise 1, your form of "input" was to modify the value of `radius` directly inside the code for the program to print something different.
 
 In this lesson, we will learn how to use the `input` function which, when called, will **stop the program from running** until a user enters some text on a single line. You may also additionally pass in a string argument as a prompt for input, such as: `"Enter your name: "`.
 

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.scss';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from "./CodeBlock";
-import MarkdownView from "./MarkdownView";
-import { setCurLessonNum } from './actions'
+import MarkdownView from "./LessonView";
+import { setCurPage } from './actions'
 import { LESSON_TITLES, doubleDigit } from './constants';
 import {
   BrowserRouter as Router,
@@ -14,6 +14,8 @@ import {
 import SideBar from './SideBar';
 import { connect } from 'react-redux';
 import HomeView from './HomeView';
+import ContributeView from './ContributeView';
+import TodoView from './TodoView';
 
 
 class App extends Component {
@@ -38,13 +40,19 @@ class App extends Component {
                 </Route>
               ))
             }
+            <Route exact path="/contribute">
+              <ContributeView />
+            </Route>
+            <Route exact path="/todo">
+              <TodoView />
+            </Route>
             <Route exact path="/">
               <HomeView />
             </Route>
             <Route path="/">
-              <div className="md-wrapper">
+              <main>
                 <h1>ERROR: bad URL</h1>
-              </div>
+              </main>
             </Route>
           </Switch>
         </div>
@@ -55,5 +63,5 @@ class App extends Component {
 }
 
 export default connect(state => ({
-  curLesson: state.curLesson
-}), { setCurLessonNum })(App);
+  curPage: state.curPage
+}), { setCurPage })(App);

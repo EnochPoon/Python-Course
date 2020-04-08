@@ -454,6 +454,8 @@ else:
     print("The number is less than or equal to 10")
 ```
 
+<b class="important-note" /> If you look at the above code, you notice that everything inside the nested `if`/`else` statements (`if x < 90: ... else: ...`) is also indented one extra tab ahead. Therefore, the print statements inside those nested conditional statements must be indented twice in total. Again, indentation really matters here.
+
 Try running the above program with different inputs. Compare results when the input is `40` versus `91` versus `8`.
 
 An equivalent program without nested conditions would look like this:
@@ -469,7 +471,7 @@ else:
     print("The number is less than or equal to 10")
 ```
 
-<b class="important-note" /> If you look at the above code with the nested conditional statements, you notice that everything inside the nested if/else statements (`if x < 90:` ... `else:` ...) is also indented one extra tab ahead. Therefore, the print statements inside those nested conditional statements must be indented twice in total. Again, indentation really matters here.
+
 
 ## Online Exercises
 

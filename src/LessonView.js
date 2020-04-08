@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from './CodeBlock';
 import { connect } from 'react-redux';
-import { setCurLessonNum } from './actions';
+import { setCurPage } from './actions';
 import { doubleDigit } from './constants';
 
-class MarkdownView extends Component {
+class LessonView extends Component {
     static propTypes = {
         lessonNum: PropTypes.number.isRequired
     }
@@ -21,9 +21,9 @@ class MarkdownView extends Component {
 
     render() {
         return (
-            <div className="md-wrapper" id="md-wrapper">
+            <main id="md-wrapper">
                 <ReactMarkdown source={this.state.md} escapeHtml={false} renderers={{ code: CodeBlock }} />
-            </div>
+            </main>
         );
     }
 
@@ -59,8 +59,8 @@ class MarkdownView extends Component {
         }).catch(e => {
             this.setState({ md: "# ERROR! Invalid url" });
         });
-        this.props.setCurLessonNum(this.props.lessonNum);
+        this.props.setCurPage(this.props.lessonNum);
     }
 }
 
-export default connect(null, { setCurLessonNum })(MarkdownView);
+export default connect(null, { setCurPage })(LessonView);

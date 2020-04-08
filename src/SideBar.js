@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { setCurLessonNum } from './actions'
+import { setCurPage } from './actions'
 import classNames from 'classnames';
 import { doubleDigit, LESSON_TITLES, FUTURE_LESSONS } from './constants';
 
 class SideBar extends Component {
 
     render() {
-        const { curLesson } = this.props;
+        const { curPage } = this.props;
         return (
-            <div className="sidebar">
+            <aside className="sidebar">
                 <Link to="/"><h1>Python-Course</h1></Link>
                 <p>By Enoch Poon</p>
 
@@ -20,7 +20,7 @@ class SideBar extends Component {
                         <Link
                         to={`/${doubleDigit(index)}`}
                         key={title}
-                        className={classNames('lesson-title', {active: index === curLesson})}>
+                        className={classNames('lesson-title', {active: index === curPage})}>
                             {`${index}: ${title}`}
                         </Link>
                     )}
@@ -33,15 +33,21 @@ class SideBar extends Component {
                         <div className="lesson-title" key={title}>{`${index + LESSON_TITLES.length}: ${title}`}</div>
                     )}
                 </div>
-            </div>
+
+                <h2>Other Links</h2>
+                <div className="lesson-list">
+                    <Link to={"/contribute"} className={classNames('lesson-title', {active: curPage === "contribute"})}>Contribute</Link>
+                    <Link to="/todo" className={classNames('lesson-title', {active: curPage === "todo"})}>TODO</Link>
+                </div>
+            </aside>
         )
     }
 }
 
 const mapStateToProps = state => {
     return {
-        curLesson: state.curLesson
+        curPage: state.curPage
     }
 }
 
-export default connect(mapStateToProps, { setCurLessonNum })(SideBar);
+export default connect(mapStateToProps, { setCurPage })(SideBar);

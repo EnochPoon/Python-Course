@@ -1,7 +1,7 @@
 import { SET_CUR_LESSON_NUM } from "../actions";
 
 const initialState = {
-    curLesson: -1
+    curPage: -1
 };
 
 export function rootReducer(state = initialState, action) {
@@ -9,7 +9,7 @@ export function rootReducer(state = initialState, action) {
         case SET_CUR_LESSON_NUM:
             return {
                 ...state,
-                curLesson: action.payload
+                curPage: action.payload
             }
         default:
             return state;
