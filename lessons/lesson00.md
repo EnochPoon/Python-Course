@@ -10,20 +10,19 @@
 
 ## What is Programming?
 
-Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes writing code can be simple, sometimes it can get really complex. If you're new to programming, Python is one of the best starting languages as it is beginner friendly.
+Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes writing code can be simple, sometimes it can get really complex. Either way, Python is agreed by many programmers as one of the most beginner-friendly programming languages that also has a very high popularity in the workforce.
 
-## About this course 
+## About this course
 
 - This course is entirely made as an introduction to the field of programming.
-- The programming language used throughout the course is **Python 3**
-  - While this course does teach a decent amount about how to code in Python, please note that **this course is rather more focused on learning how to think like a programmer.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style. However, proficiency in academic-style programming can allow you to learn its many applications as well as other programming languages much more efficiently.
-- Although this course is very beginner-focused, it may not necessarily mean that it is "easy". The path to becoming a better programmer requires a lot of logical thinking, and puzzle-solving skills. Therefore, if you think you are good at math, there is a higher chance that you can do better in this course. But if you are not so good at math, this course may be more challenging.
+- While this course does teach a decent amount about how to code in Python, please note that **this course is rather more focused on learning how to think like a programmer.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style. However, proficiency in academic-style programming can allow you to learn its many applications as well as other programming languages much more efficiently.
+- The course content was designed with the assumption that **you have very little to no prior knowledge of programming**, though it may not necessarily mean that it is "easy". The path to becoming a better programmer requires a lot of logical thinking and puzzle-solving skills. If you think you are good at math, there is a higher chance that you can do better in this course. But if you are not so good at math, this course may be more challenging.
 - This course also includes a lot of exercises. Just like learning math, you cannot simply read notes, memorize them, and expect yourself to be a proficient programmer; this skill requires a lot of practice.
   - There have been many cases where students may take several hours, sometimes over the span of days, just to solve a single problem. Stressing yourself too much from programming can be damaging to your health, so be sure you take breaks at certain times.
 
 ## Setup
 
-In order to code, you will (of course) require some software installed on your computer. An **integrated development environment (IDE)** is a software used for coding along with many other features in order to aid a programmer. There are many IDE's out there, but if you have no idea which IDE to download, I suggest you use **Wing 101** (see setup links below from University of Waterloo's CS 116 course):
+In order to begin your programming journey, you will (of course) require some software installed on your computer. An **integrated development environment (IDE)** is a software used for coding along with many other features in order to aid a programmer. There are many IDE's out there, but if you have no idea which IDE to download, I suggest you use **Wing 101** (see setup links below from University of Waterloo's CS 116 course):
 
 **Warning: the setup guides below will tell you to install Python 3.7.2. Do not do that; instead, install the most recent Python version (e.g. Python 3.8.2 or later). Also, if they mention Dr. Racket, you don't have to know what that is. Just keep reading along.**
 
@@ -46,7 +45,7 @@ You may or may have not heard of the stereotype that "programmers always use dar
 
 So let's start off by taking you through a small exploration of your IDE:
 
-If you followed the setup, you may have ended up with a Wing looking like this:
+If you followed the setup, you may have ended up with Wing looking like this (Note that the screen below uses the **One Dark** color palette):
 
 ![Initial layout](images/00-init.PNG)
 
