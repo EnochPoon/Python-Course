@@ -1,37 +1,28 @@
 import React, { Component } from 'react';
 import './App.scss';
-import ReactMarkdown from 'react-markdown';
-import CodeBlock from "./CodeBlock";
 import MarkdownView from "./LessonView";
 import { setCurPage } from './actions'
 import { LESSON_TITLES, doubleDigit } from './constants';
 import {
-  BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import SideBar from './SideBar';
 import { connect } from 'react-redux';
 import HomeView from './HomeView';
 import ContributeView from './ContributeView';
 import TodoView from './TodoView';
+import HeaderBar from './HeaderBar';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      md: ""
-    }
-  }
 
   render() {
     return (
       <div className="App">
+        {/* <HeaderBar /> */}
         <SideBar />
         <div className="right-container">
-          <div className="nav-header"></div>
           <Switch>
             {
               [...Array(LESSON_TITLES.length).keys()].map(num => (

@@ -11,34 +11,38 @@ class SideBar extends Component {
         const { curPage } = this.props;
         return (
             <aside className="sidebar">
-                <Link to="/"><h1>Python-Course</h1></Link>
-                <p>By Enoch Poon</p>
+                <Link to="/" className="sidebar-header">
+                    <h1>Python-Course</h1>
+                    <div>By Enoch Poon</div>
+                </Link>
+                <div className="sidebar-links">
+                    <h2>Published Lessons</h2>
+                    <div className="lesson-list">
+                        { LESSON_TITLES.map((title, index) => 
+                            <Link
+                            to={`/${doubleDigit(index)}`}
+                            key={title}
+                            className={classNames('lesson-title', {active: index === curPage})}>
+                                {`${index}: ${title}`}
+                            </Link>
+                        )}
+                    </div>
 
-                <h2>Published Lessons</h2>
-                <div className="lesson-list">
-                    { LESSON_TITLES.map((title, index) => 
-                        <Link
-                        to={`/${doubleDigit(index)}`}
-                        key={title}
-                        className={classNames('lesson-title', {active: index === curPage})}>
-                            {`${index}: ${title}`}
-                        </Link>
-                    )}
-                </div>
+                    <h2>Future Lessons</h2>
+                    <div>(subject to change)</div>
+                    <div className="lesson-list">
+                        { FUTURE_LESSONS.map((title, index) => 
+                            <div className="lesson-title" key={title}>{`${index + LESSON_TITLES.length}: ${title}`}</div>
+                        )}
+                    </div>
 
-                <h2>Future Lessons</h2>
-                <div>(subject to change)</div>
-                <div className="lesson-list">
-                    { FUTURE_LESSONS.map((title, index) => 
-                        <div className="lesson-title" key={title}>{`${index + LESSON_TITLES.length}: ${title}`}</div>
-                    )}
+                    <h2>Other Links</h2>
+                    <div className="lesson-list">
+                        <Link to={"/contribute"} className={classNames('lesson-title', {active: curPage === "contribute"})}>Contribute</Link>
+                        <Link to="/todo" className={classNames('lesson-title', {active: curPage === "todo"})}>TODO</Link>
+                    </div>
                 </div>
-
-                <h2>Other Links</h2>
-                <div className="lesson-list">
-                    <Link to={"/contribute"} className={classNames('lesson-title', {active: curPage === "contribute"})}>Contribute</Link>
-                    <Link to="/todo" className={classNames('lesson-title', {active: curPage === "todo"})}>TODO</Link>
-                </div>
+                
             </aside>
         )
     }

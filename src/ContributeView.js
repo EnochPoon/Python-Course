@@ -9,13 +9,13 @@ class ContributeView extends Component {
     }
     render() {
         return (
-            <main>
+            <main className="contribute">
                 <h1>Contribute</h1>
     
                 <p>At the moment, I (Enoch Poon) am the sole developer and content creator of this entire website. However, that doesn't mean that you too can help me out!</p>
-    
+                
                 <h2>Small Contributions</h2>
-                <p>If you notice things like bugs, spelling errors, or simply suggestions to improve my site, please let me know, and I will consider them!</p>
+                <p>If you notice things like bugs, spelling errors, or simply tiny suggestions to improve my site, please let me know, and I will consider them!</p>
     
                 <h2>More Committed People</h2>
                 <p>Do you think you have the power and the skills to help me drastically improve this site? If you are interested, contact me for any of these positions (If you don't know how to contact me, then don't even try bc that means I don't know you)! I don't need like a resume or what not (since I'm not super formal); as long as I know you, and you can show me your skills by your projects or whatever, that's all I need.</p>

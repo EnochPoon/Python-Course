@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
-
+import { cb } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 class CodeBlock extends PureComponent {
   static propTypes = {
     value: PropTypes.string.isRequired,
@@ -16,7 +16,7 @@ class CodeBlock extends PureComponent {
   render() {
     const { language, value } = this.props;
     return (
-      <SyntaxHighlighter language={language} style={darcula}>
+      <SyntaxHighlighter language={language} style={cb} >
         {value}
       </SyntaxHighlighter>
     );

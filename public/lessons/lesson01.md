@@ -6,9 +6,9 @@
 - [Basic Mathematical Operations](#basic-mathematical-operations)
 - [Variables](#variables)
 - [Output](#output)
-- [Exercise 1](#exercise-1)
+  - [Exercise](#exercise)
 - [More Built-in Functions](#more-built-in-functions)
-- [Exercise 2](#exercise-2)
+  - [Exercise](#exercise-1)
 
 ## A few vocabulary terms you should know
 
@@ -25,7 +25,7 @@
 
 Let's start off by learning how to use the Python Shell.
 
-We will start by learning how to use numbers and basic mathematical functions: `+` for addition, `-` for subtraction, `*` for multiplication, `/` for division. Type each of these lines below into the Python Shell and determine what is returned after each line is entered (Do not type the characters `>>>`, as those are just to tell you to input something in the shell. Do not type in the `_____` either, as those are just placeholders for the resulting values; just type in the mathematical expression that follows each `>>>`)
+We will start by learning how to use numbers and basic mathematical functions: `+` for addition, `-` for subtraction, `*` for multiplication, `/` for division. Type the expression that follows each of the `>>>` in the Python Shell and see the results.
 
 ```python
 >>> 3 + 5
@@ -186,7 +186,7 @@ Next, run this code by clicking the large green Play button at the top. Wing sho
 You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
 
 <b class="important-note" /> When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
-```
+```python
 >>> 3 + 5
 >>> print(3 + 5)
 ```
@@ -248,7 +248,7 @@ One of them simply evaluates an expression, while the other one prints to the co
    ```
 
 
-## Exercise 1
+### Exercise
 
 Use the code template below:
 
@@ -277,6 +277,7 @@ etc.
 
 In Python, there are other functions that you may use to return different values:
 1. `abs(n)` takes a number `n` and returns the **absolute value** of `n`.
+
    ```python
    >>> x = 10
    >>> abs(x)
@@ -374,7 +375,7 @@ largest_3 = max(x, y, z)
 print(largest_3)
 ```
 
-## Exercise 2
+### Exercise
 
 Use the code fragment below:
 
@@ -409,7 +410,7 @@ Then running your program should print:
 
 And if your first three lines were
 
-```
+```python
 a = -1
 b = -4
 c = -3
