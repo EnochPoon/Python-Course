@@ -1,8 +1,10 @@
-# Lesson 2: Input
+<h1>Lesson 2: Input</h1>
 
-## Table of Contents
-  - [The `input` function](#the-input-function)
-  - [Online Exercises](#online-exercises)
+<h2>Table of Contents</h2>
+
+- [The `input` function](#the-input-function)
+  - [Example](#example)
+- [Online Exercises](#online-exercises)
 
 
 ## The `input` function
@@ -12,7 +14,9 @@ If you have done the exercises in the previous lesson, you provided "input" by s
 
 In this lesson, we will learn how to use the `input` function which, when called, will **stop the program from running** until a user enters some text on a single line. You may also additionally pass in a string argument as a prompt for input, such as: `"Enter your name: "`.
 
-Example: place this code in a new Python file and run it:
+### Example
+
+Place this code in a new Python file and run it:
 ```python
 name = input("Enter your name: ")
 print("Hello, " + name)
