@@ -24,7 +24,7 @@ print("Hello, " + name)
 
 When you run the file, you will notice that the prompt `Enter your name: ` appears, but then the program **stops**. That is because it is waiting for you to enter some input in the console. Type in your name next to that prompt, and then press `Enter` (or `return` for Mac users). The result is that the name you entered is stored as a string in the variable `name`, and then it is printed alongside the other string `"Hello, "`.
 
-<b class="important-note" />The `input` function will always return the entered input as a **string**. If we want to read a string like an integer (also known as *parsing* a string to an integer), we use the built-in `int` function:
+<b class="important-note" /> The `input` function will always return the entered input as a **string**. If we want to read a string like an integer (also known as *parsing* a string to an integer), we use the built-in `int` function:
 
 Here is an example of a program that takes in two integers from input and returns their sum:
 ```python

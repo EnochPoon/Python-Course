@@ -55,10 +55,21 @@ class LessonView extends Component {
                         anchor.target = "_blank"
                     }
                 }
+
+                // Set up appropriate text content for special text
+                const importantNotes = mdWrapper.querySelectorAll('.important-note');
+                for (const node of importantNotes) {
+                    node.textContent = "Important Note:";
+                }
+                const selfStudies = mdWrapper.querySelectorAll('.self-study');
+                for (const node of selfStudies) {
+                    node.textContent = "Self-Study:"
+                }
             });
         }).catch(e => {
             this.setState({ md: "# ERROR! Invalid url" });
         });
+
         this.props.setCurPage(this.props.lessonNum);
     }
 }

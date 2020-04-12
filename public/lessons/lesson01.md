@@ -16,7 +16,10 @@
   - The equivalent adverb is *syntactically* (e.g. *syntactically correct* means having correct syntax)
 - *Semantics* is the "meaning of what we say". Semantic error occurs when an expression, though correct in terms of syntax, cannot be reduced to a value. For example, "The Sun digs hungrily" has correct syntax (spelling and grammar), but it makes no sense.
 - A *data type* is a possible "type" of value that can be used for computation. Examples of data types include: 
-  - **Numbers**. The two types of numbers are **integers** (such as 5, 0, -44, etc.) and **floats** (rational numbers such as 4.5, 0.1, -4.555, etc.). Note that an integer counts as a float as well (i.e. 5 is a float because 5 can be represented as 5.0).
+  - **Numbers**. The three types of numbers are:
+    - **Natural numbers**: The numbers 0, 1, 2, 3, 4, ... Note that in the programming world, **0 counts as a natural number**. In most mathematics classes, 0 is **not** a natural number.
+    - **Integers**: such as 5, 0, -44, etc. Note that all natural numbers are also integers.
+    - **Floats**: rational numbers such as 4.5, 0.1, -4.555, etc. Note that all integers are floats (i.e. 5 is a float because 5 can be represented as 5.0).
   - **Strings**. These are sequences of characters (such as `"hello"`, `"python is cool"`, etc.). You will learn more about strings in-depth in a later lesson.
   
   You will learn more data types in later lessons.
@@ -87,7 +90,7 @@ _____
 _____
 ```
 
-<b class="important-note" /> the string `"42"` is **not** the same as the number `42` because the data types are different.
+<b class="important-note" /> The string `"42"` is **not** the same as the number `42` because the data types are different.
 
 We will learn more about strings in-depth in a later lesson. For now, most of our examples will be using numbers.
 

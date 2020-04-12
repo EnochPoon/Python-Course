@@ -36,7 +36,7 @@ class ContributeView extends Component {
                 
                 <article>
                     <h3>Amazing Content Writer</h3>
-                    <p>Wanna actually write the lessons? You just gotta prove to me that you're actually really good at it. Show me some notes or something of your own of a particular subject (preferably math or computer science). (This time, I am <b>extremely</b> picky, and I absolutely love calling many people out for poor teaching or lesson-writing skills). You also (obviously) have to be familiar with basic Python 3.</p>
+                    <p>Wanna actually write the lessons? You just gotta prove to me that you're actually really good at it. To make such proof, show me some notes or something of your own of a particular subject (preferably math or computer science). (This time, I am <b>extremely</b> picky, and I absolutely love calling many people out for poor teaching or lesson-writing skills). You also (obviously) have to be familiar with basic Python 3.</p>
                 </article>
                 
             </main>

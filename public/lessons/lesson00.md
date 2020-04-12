@@ -1,4 +1,4 @@
-<h1>Introduction and Setup</h1>
+<h1>Lesson 0: Introduction and Setup</h1>
 
 <h2>Table of Contents</h2>
 

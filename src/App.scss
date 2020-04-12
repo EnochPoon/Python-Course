@@ -1,5 +1,6 @@
 
 $header-height: 70px;
+$sidebar-width: 250px;
 
 .App {
   display: flex;
@@ -28,8 +29,8 @@ header {
 }
 
 .sidebar {
-  background-color: lightblue;
-  width: 300px;
+  background-color: slategrey;
+  width: $sidebar-width;
   position: fixed;
   height: 100%;
   //top: $header-height;
@@ -39,7 +40,8 @@ header {
     display: block;
     background-color: darkslategrey;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 16px;
+    box-shadow: 0 1px 4px 0 black;
     h1 {
       font-size: 30px;
       color: lightgrey;
@@ -58,42 +60,61 @@ header {
     }
   }
 
-  &-links {
-    flex: 1;
-    overflow-y: auto;
-  }
-
   h2 {
     margin-bottom: 0;
   }
-  .lesson-list {
-    .lesson-title {
-      background-color: lightskyblue;
-      transition: background-color 0.2s, color 0.2s;
-      padding: 10px;
-      display: block;
-      color: black;
-      text-decoration: none;
+  .sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    * {
+      color: white;
+    }
+    .sidebar-subtitle {
+      padding: 0 16px;
+      color: lightgrey;
+    }
+    h2 {
+      margin: 0 16px;
+      cursor: default;
+      color: lightskyblue;
+      border-bottom: 1px solid black;
+    }
+    hr {
+      margin-top: 10px;
+    }
+    .sidebar-list {
+      background-color: darken(slategrey, 10%);
+    }
+    .sidebar-list-item {
+      padding: 0;
+      transition: background-color .4s;
       &:hover {
-        background-color: darken(skyblue, 5%);
+        background-color: rgba(0, 0, 0, 0.1);
       }
-      &.active {
-        color: white;
+      a {
+        transition: color .4s;
+        padding: 5px 16px;
+        display: inline-block;
+        text-decoration: none;
+        flex: 1;
+      }
+
+      &.Mui-selected, &.Mui-selected:hover {
         background-color: teal;
-        &:hover {
-          background-color: darken(teal, 5%);
-        }
+      }
+
+      &.Mui-disabled {
+        opacity: 1;
+        padding: 5px 16px;
       }
     }
-
-    
   }
 }
 .right-container {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: 300px;
+  padding-left: $sidebar-width;
 }
 .nav-header {
   height: 50px;
@@ -111,14 +132,18 @@ main {
   flex: 1;
   background-color: rgb(43, 43, 43);
   color: $text-color;
+  scroll-behavior: smooth;
   img {
     max-width: 1000px;
   }
 
   a {
     color: turquoise;
-    &:visited {
-      color: turquoise;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    transition: color 0.2s;
+    &:hover {
+      color: lighten(turquoise, 30%)
     }
   }
   h1, h2, h3, h4, h5, h6 {
@@ -152,9 +177,6 @@ main {
     width: fit-content;
   }
 
-  h2 {
-    margin-top: 20px;
-  }
   code {
     margin: 0;
     white-space: nowrap;
@@ -163,8 +185,8 @@ main {
     color: skyblue;
   }
   pre {
-    border: 1px solid grey;
-    border-radius: 5px;
+    border: 1px solid grey !important;
+
     code {
       white-space: unset;
       .builtin {
@@ -175,15 +197,9 @@ main {
 
   b.important-note {
     color: red;
-    &::after {
-      content: "Important Note: ";
-    }
   }
   b.self-study {
     color: lawngreen;
-    &::after {
-      content: "Self-Study: ";
-    }
   }
   table {
     border-collapse: collapse;

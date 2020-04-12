@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setCurPage } from './actions'
-import classNames from 'classnames';
 import { doubleDigit, LESSON_TITLES, FUTURE_LESSONS } from './constants';
-
+import {
+    List, ListItem, Divider
+} from "@material-ui/core";
 class SideBar extends Component {
 
     render() {
@@ -15,33 +16,48 @@ class SideBar extends Component {
                     <h1>Python-Course</h1>
                     <div>By Enoch Poon</div>
                 </Link>
-                <div className="sidebar-links">
-                    <h2>Published Lessons</h2>
-                    <div className="lesson-list">
-                        { LESSON_TITLES.map((title, index) => 
-                            <Link
-                            to={`/${doubleDigit(index)}`}
-                            key={title}
-                            className={classNames('lesson-title', {active: index === curPage})}>
-                                {`${index}: ${title}`}
-                            </Link>
-                        )}
+                    <div className="sidebar-content">
+                        <List component="nav" className="sidebar-list">
+                            <h2>Published Lessons</h2>
+                            { LESSON_TITLES.map((title, index) => 
+                                <ListItem
+                                button
+                                selected={index === curPage}
+                                className="sidebar-list-item"
+                                >
+                                    <Link
+                                    to={`/${doubleDigit(index)}`}
+                                    key={title}
+                                    >
+                                        {`${index}: ${title}`}
+                                    </Link>
+                                </ListItem>
+                                
+                            )}
+
+                            
+                        </List>
+                        
+                        <List component="nav" className="sidebar-list">
+                            <h2>Other Links</h2>
+                            <ListItem
+                            button
+                            selected={curPage === "contribute"}
+                            className="sidebar-list-item"
+                            >
+                                <Link to={"/contribute"}>Contribute</Link>
+                            </ListItem>
+                            <ListItem
+                            button
+                            selected={curPage === "todo"}
+                            className="sidebar-list-item"
+                            >
+                                <Link to="/todo">Future Updates</Link>
+                            </ListItem>
+                        </List>
                     </div>
 
-                    <h2>Future Lessons</h2>
-                    <div>(subject to change)</div>
-                    <div className="lesson-list">
-                        { FUTURE_LESSONS.map((title, index) => 
-                            <div className="lesson-title" key={title}>{`${index + LESSON_TITLES.length}: ${title}`}</div>
-                        )}
-                    </div>
-
-                    <h2>Other Links</h2>
-                    <div className="lesson-list">
-                        <Link to={"/contribute"} className={classNames('lesson-title', {active: curPage === "contribute"})}>Contribute</Link>
-                        <Link to="/todo" className={classNames('lesson-title', {active: curPage === "todo"})}>TODO</Link>
-                    </div>
-                </div>
+                    
                 
             </aside>
         )

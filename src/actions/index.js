@@ -1,8 +1,8 @@
-export const SET_CUR_LESSON_NUM = 'SET_CUR_LESSON_NUM';
+export const SET_CUR_PAGE = 'SET_CUR_PAGE';
 
 export function setCurPage(payload) {
     return {
-        type: SET_CUR_LESSON_NUM,
+        type: SET_CUR_PAGE,
         payload
     }
 }

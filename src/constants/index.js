@@ -2,11 +2,11 @@ export const LESSON_TITLES = [
     "Introduction and Setup",
     "Variables and Output",
     "Input",
-    "Conditional Statements"
+    "Conditional Statements",
+    "Functions"
 ];
 
 export const FUTURE_LESSONS = [
-    "Functions",
     "Loops",
     "Strings",
     "Lists",
