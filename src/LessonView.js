@@ -5,7 +5,8 @@ import CodeBlock from './CodeBlock';
 import { connect } from 'react-redux';
 import { setCurPage } from './actions';
 import { doubleDigit } from './constants';
-
+import { CircularProgress } from '@material-ui/core';
+import classNames from 'classnames';
 class LessonView extends Component {
     static propTypes = {
         lessonNum: PropTypes.number.isRequired
@@ -21,7 +22,8 @@ class LessonView extends Component {
 
     render() {
         return (
-            <main id="md-wrapper">
+            <main id="md-wrapper" className={classNames({ loading: this.state.md === ""})}>
+                {this.state.md === "" && <CircularProgress disableShrink style={{margin: 'auto'}} />}
                 <ReactMarkdown source={this.state.md} escapeHtml={false} renderers={{ code: CodeBlock }} />
             </main>
         );
