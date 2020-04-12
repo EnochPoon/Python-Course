@@ -1,7 +1,8 @@
-<h1>Lesson 3: Conditional statements</h1>
+<h1>Lesson 3: Conditional Statements</h1>
 
 <h2>Table of Contents</h2>
 
+- [Introduction](#introduction)
 - [Introduction to Booleans](#introduction-to-booleans)
   - [Comparison Operators](#comparison-operators)
     - [Examples](#examples)
@@ -16,6 +17,9 @@
   - [The `elif` statement](#the-elif-statement)
   - [Nested conditional statements](#nested-conditional-statements)
 - [Online Exercises](#online-exercises)
+
+
+## Introduction
 
 In the past, you have always written code where each line is run one-by-one. However, in more complex cases, there may be times when you don't want to do that. In some cases, you may want to run certain lines of code **only under some conditions**. This lesson will teach you how to do that in Python. We will first have to go through understanding *booleans* before we learn to write these conditional statements.
 
@@ -224,7 +228,7 @@ For any boolean expression `X`,
 
 These kinds of situations are rather more difficult to figure out, as many people get these kinds of mistakes and leave them unnoticed. If you want to ensure your intended logic is correct when using multiple logical operators, you are free to use brackets within the expression.
 
-<b class="important-note" />The way Python processes these complex boolean expressions may not be the same in other programming languages. If you're ever learning another programming language, make sure you also understand the way they look at these boolean expressions.
+<b class="important-note" /> The way Python processes these complex boolean expressions may not be the same in other programming languages. If you're ever learning another programming language, make sure you also understand the way they look at these boolean expressions.
 
 #### Exercise
 Use the code snippet below:
