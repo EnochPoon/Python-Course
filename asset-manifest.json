@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Python-Course/static/css/main.5d2c42b0.chunk.css",
-    "main.js": "/Python-Course/static/js/main.f171b7b2.chunk.js",
-    "main.js.map": "/Python-Course/static/js/main.f171b7b2.chunk.js.map",
+    "main.css": "/Python-Course/static/css/main.4338343a.chunk.css",
+    "main.js": "/Python-Course/static/js/main.84eda69d.chunk.js",
+    "main.js.map": "/Python-Course/static/js/main.84eda69d.chunk.js.map",
     "runtime-main.js": "/Python-Course/static/js/runtime-main.e54eb8bd.js",
     "runtime-main.js.map": "/Python-Course/static/js/runtime-main.e54eb8bd.js.map",
     "static/js/2.d174888e.chunk.js": "/Python-Course/static/js/2.d174888e.chunk.js",
     "static/js/2.d174888e.chunk.js.map": "/Python-Course/static/js/2.d174888e.chunk.js.map",
     "index.html": "/Python-Course/index.html",
-    "precache-manifest.5f5d7c4dd93e29e23ca71169ead28f38.js": "/Python-Course/precache-manifest.5f5d7c4dd93e29e23ca71169ead28f38.js",
+    "precache-manifest.108041e14003f4550b4608d1bd2114ed.js": "/Python-Course/precache-manifest.108041e14003f4550b4608d1bd2114ed.js",
     "service-worker.js": "/Python-Course/service-worker.js",
-    "static/css/main.5d2c42b0.chunk.css.map": "/Python-Course/static/css/main.5d2c42b0.chunk.css.map",
+    "static/css/main.4338343a.chunk.css.map": "/Python-Course/static/css/main.4338343a.chunk.css.map",
     "static/js/2.d174888e.chunk.js.LICENSE.txt": "/Python-Course/static/js/2.d174888e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e54eb8bd.js",
     "static/js/2.d174888e.chunk.js",
-    "static/css/main.5d2c42b0.chunk.css",
-    "static/js/main.f171b7b2.chunk.js"
+    "static/css/main.4338343a.chunk.css",
+    "static/js/main.84eda69d.chunk.js"
   ]
 }
