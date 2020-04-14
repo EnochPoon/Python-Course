@@ -34,6 +34,7 @@ header {
   position: fixed;
   height: 100%;
   //top: $header-height;
+  box-shadow: 1px 0 4px 0 black;
   display: flex;
   flex-direction: column;
   &-header {
@@ -41,7 +42,7 @@ header {
     background-color: darkslategrey;
     text-decoration: none;
     padding: 5px 16px;
-    box-shadow: 0 1px 4px 0 black;
+    
     h1 {
       font-size: 30px;
       color: lightgrey;
@@ -124,6 +125,10 @@ header {
 }
 
 main {
+  font-weight: 300;
+  b, strong {
+    font-weight: 700;
+  }
   &.loading {
     display: flex;
   }

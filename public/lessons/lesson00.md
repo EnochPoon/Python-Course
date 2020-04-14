@@ -2,23 +2,25 @@
 
 <h2>Table of Contents</h2>
 
-- [What is Programming?](#what-is-programming)
+- [Introduction](#introduction)
 - [About this course](#about-this-course)
 - [Setup](#setup)
   - [Optional Additional Setup](#optional-additional-setup)
 - [Small tour around Wing 101](#small-tour-around-wing-101)
 
-## What is Programming?
+## Introduction
 
-Programming, in its simplest form, is basically providing instructions for a computer to perform a task. We use programming languages such as Python to write code (i.e. these instructions). Sometimes writing code can be simple, sometimes it can get really complex. Either way, Python is agreed by many programmers as one of the most beginner-friendly programming languages that also has a very high popularity in the workforce.
+We are currently in the era of extremely rapid technological advancement. Nowadays, you look everywhere, and it looks like everything is technology! Most of these technologies have been **programmed** by someone in order for them to perform their intended tasks.
+
+Because it really seems like "technology is everywhere", some people have argued that everyone should learn programming if such tools are available. This is one of the reasons I have created this website. It offers a beginner's course for people like you to immerse yourself in the tech world by being introduced to programming. Specifically, this course will use **Python**, which is agreed by many programmers as one of the most beginner-friendly programming languages with a very high popularity in the workforce.
 
 ## About this course
 
-- This course is entirely made as an introduction to the field of programming.
-- While this course does teach a decent amount about how to code in Python, please note that **this course is rather more focused on learning how to think like a programmer.** Therefore, this course would rather be similar to the style of a first-year computer science course: more academic-style than application-style. However, proficiency in academic-style programming can allow you to learn its many applications as well as other programming languages much more efficiently.
-- The course content was designed with the assumption that **you have very little to no prior knowledge of programming**, though it may not necessarily mean that it is "easy". The path to becoming a better programmer requires a lot of logical thinking and puzzle-solving skills. If you think you are good at math, there is a higher chance that you can do better in this course. But if you are not so good at math, this course may be more challenging.
-- This course also includes a lot of exercises. Just like learning math, you cannot simply read notes, memorize them, and expect yourself to be a proficient programmer; this skill requires a lot of practice.
-  - There have been many cases where students may take several hours, sometimes over the span of days, just to solve a single problem. Stressing yourself too much from programming can be damaging to your health, so be sure you take breaks at certain times.
+Again, this course will introduce you to the basics of programming. Python is the programming language used throughout the course, but note that **this course is not focused on learning how to code in Python.** Instead, this will introduce you to the field of programming. Python has so many different major real-world applications such as data science, artificial intelligence, etc., but this course is not very focused on such topics. However, if you do well in this course, learning the real-world applications on your own should be a lot easier.
+
+Do not worry if you have never touched programming before. This course was written with the assumption that you have **little to no prior knowledge of programming**. However, though not required, it is *highly recommended* that you would consider yourself confident in **mathematics**. It is likely that if you have strong logical thinking and problem-solving skills, you may excel at becoming a better programmer. On the contrary, poor logical thinking and problem-solving skills may make this course more challenging. Do not expect that this course is simply about reading notes and memorizing them; this course will involve a lot of exercises to train you to become a better programmer.
+
+<b class="important-note"></b> Programming is often challenging. There can be some cases where people take several hours or even days just to solve a simple problem. Therefore, it can get stressful at times to the point that it can damage your health. While learning and practicing, be sure to take frequent breaks.
 
 ## Setup
 
