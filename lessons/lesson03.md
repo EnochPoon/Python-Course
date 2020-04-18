@@ -3,7 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [Introduction to Booleans](#introduction-to-booleans)
+- [Booleans](#booleans)
   - [Comparison Operators](#comparison-operators)
     - [Examples](#examples)
     - [Exercise](#exercise)
@@ -23,7 +23,7 @@
 
 In the past, you have always written code where each line is run one-by-one. However, in more complex cases, there may be times when you don't want to do that. In some cases, you may want to run certain lines of code **only under some conditions**. This lesson will teach you how to do that in Python. We will first have to go through understanding *booleans* before we learn to write these conditional statements.
 
-## Introduction to Booleans
+## Booleans
 
 A **boolean** (or **bool** for short) is a value that can be either `True` or `False`. Very often, they are expressed in code through **boolean expressions**, which use other values that can be simplified into either `True` or `False`. We will learn about **comparison operators** and **logical operators** that are used in boolean expressions.
 
@@ -479,4 +479,14 @@ else:
 
 ## Online Exercises
 
-You may return to [the repl.it course](https://repl.it/student/classrooms/183950). Complete problems **3.1 to 3.O** ("3.O" ends with the letter `O`, not the number `0`).
+These problems are ordered by approximate level of difficulty.
+
+1. [Dog Treats](https://dmoj.ca/problem/ccc20j1)
+2. [Winning Score](https://dmoj.ca/problem/ccc19j1)
+3. [C.C and Cheese-kun](https://dmoj.ca/problem/dmopc16c1p0)
+4. [Quadrant Selection](https://dmoj.ca/problem/ccc17j1)
+5. [Sounds fishy!](https://dmoj.ca/problem/ccc12j2)
+6. [Special Day](https://dmoj.ca/problem/ccc15j1)
+7. [Mimi and Pizza](https://dmoj.ca/problem/dmopc17c5p0)
+8. [Which Alien?](https://dmoj.ca/problem/ccc11j1)
+9. [Triangle Times](https://dmoj.ca/problem/ccc14j1)
