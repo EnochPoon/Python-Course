@@ -5,7 +5,10 @@ import { setCurPage } from './actions'
 import { LESSON_TITLES, doubleDigit } from './constants';
 import {
   Switch,
-  Route
+  Route,
+  BrowserRouter,
+  useLocation,
+  useParams
 } from "react-router-dom";
 import SideBar from './SideBar';
 import { connect } from 'react-redux';
@@ -16,7 +19,6 @@ import HeaderBar from './HeaderBar';
 
 
 class App extends Component {
-
   render() {
     return (
       <div className="App">
@@ -26,11 +28,14 @@ class App extends Component {
           <Switch>
             {
               [...Array(LESSON_TITLES.length).keys()].map(num => (
-                <Route path={`/${doubleDigit(num)}`} key={num}>
+                <Route exact path={`/lessons/${doubleDigit(num)}`} key={num}>
                   <MarkdownView lessonNum={num} />
                 </Route>
               ))
             }
+            {/* <Route exact path="/lessons/:lessonNum">
+              <MarkdownView />
+            </Route> */}
             <Route exact path="/contribute">
               <ContributeView />
             </Route>
@@ -50,7 +55,6 @@ class App extends Component {
       </div>
     );
   }
-  
 }
 
 export default connect(state => ({

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from './CodeBlock';
@@ -7,30 +7,28 @@ import { setCurPage } from './actions';
 import { doubleDigit } from './constants';
 import { CircularProgress } from '@material-ui/core';
 import classNames from 'classnames';
-class LessonView extends Component {
-    static propTypes = {
-        lessonNum: PropTypes.number.isRequired
-    }
 
+class LessonView extends Component {
     constructor(props) {
         super(props);
-        this.mdPath = `./lessons/lesson${doubleDigit(this.props.lessonNum)}.md`;
         this.state = {
             md: ""
-        };
+        }
     }
 
     render() {
+        const { md } = this.state;
         return (
-            <main id="md-wrapper" className={classNames({ loading: this.state.md === ""})}>
-                {this.state.md === "" && <CircularProgress disableShrink style={{margin: 'auto'}} />}
-                <ReactMarkdown source={this.state.md} escapeHtml={false} renderers={{ code: CodeBlock }} />
+            <main id="md-wrapper" className={classNames({ loading: md === ""})}>
+                {md === "" && <CircularProgress disableShrink style={{margin: 'auto'}} />}
+                <ReactMarkdown source={md} escapeHtml={false} renderers={{ code: CodeBlock }} />
             </main>
         );
     }
 
     componentDidMount() {
-        fetch(this.mdPath, { mode: 'no-cors' })
+        const mdPath = `./lesson${doubleDigit(this.props.lessonNum)}.md`;
+        fetch(mdPath, { mode: 'no-cors' })
         .then(response => response.text())
         .then(data => {
             this.setState({ md: data }, () => {
@@ -69,10 +67,10 @@ class LessonView extends Component {
                 }
             });
         }).catch(e => {
-            this.setState({ md: "# ERROR! Invalid url" });
+            this.setState({ md: "# ERROR! Invalid Lesson" });
         });
 
-        this.props.setCurPage(this.props.lessonNum);
+        this.props.setCurPage(parseInt(this.props.lessonNum));
     }
 }
 

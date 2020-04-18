@@ -24,7 +24,7 @@ print("Hello, " + name)
 
 When you run the file, you will notice that the prompt `Enter your name: ` appears, but then the program **stops**. That is because it is waiting for you to enter some input in the console. Type in your name next to that prompt, and then press `Enter` (or `return` for Mac users). The result is that the name you entered is stored as a string in the variable `name`, and then it is printed alongside the other string `"Hello, "`.
 
-<b class="important-note" /> The `input` function will always return the entered input as a **string**. If we want to read a string like an integer (also known as *parsing* a string to an integer), we use the built-in `int` function:
+<b class="important-note"></b> The `input` function will always return the entered input as a **string**. If we want to read a string like an integer (also known as *parsing* a string to an integer), we use the built-in `int` function:
 
 Here is an example of a program that takes in two integers from input and returns their sum:
 ```python
@@ -59,6 +59,10 @@ nor
 
 ## Online Exercises
 
-[repl.it](https://repl.it/) is a website created for the purpose of coding online and sharing code. It also includes many different courses created by the online community that include practice problems. I found a course that offers many different practice problems as good exercises for you, but it requires you to create an account first.
+Hopefully you created an account on [DMOJ](https://dmoj.ca). If you haven't, read up on how to set it up in Lesson 0 first. If you did, try these problems
+- Make sure you test out your code on Wing first before submitting!
+- **Do not prompt for input** (i.e. do not do something like `N = int(input("Enter your number: "))`. Just say `N = int(input())`)
 
-Once you create an account, go to [this course](https://repl.it/classroom/invite/oJYvLOo) and click "Take and Learn". Then, complete as many assignment problems in that course as you can **from 1.1 to 1.7 as well as 2.1 to 2.D**. Note that I did not make these exercises myself.
+1. [Next in Line](https://dmoj.ca/problem/ccc13j1)
+2. [Core Drill](https://dmoj.ca/problem/dmopc14c5p1) (Hint: use 3.14159 as pi. Do not use 3.14)
+3. [Flare](https://dmoj.ca/problem/dmopc14c7p1) (Requires knowledge of mathematics on quadratic functions)

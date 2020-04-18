@@ -154,31 +154,34 @@ main {
       color: lighten(turquoise, 30%)
     }
   }
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #eaecef;
   }
 
   h1 {
     color: darkgoldenrod;
     font-size: 40px;
+    border-bottom: 1px solid darkgoldenrod;
   }
   h2 {
     color: bisque;
     font-size: 32px;
+    margin-top: 50px;
+    border-top: 1px solid #eaecef;
   }
   h3 {
-    color: magenta;
+    color: darkgoldenrod;
     font-size: 24px;
   }
   h4 {
-    color: darkgoldenrod;
+    color: blue;
     font-size: 20px;
   }
   h5 {
-    color: bisque;
+    color: darkgoldenrod;
   }
   h6 {
-    color: magenta;
+    color: bisque;
   }
 
   h3, h4, h5, h6 {
@@ -194,9 +197,9 @@ main {
   }
   pre {
     border: 1px solid grey !important;
-
     code {
       white-space: unset;
+      font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
       .builtin {
         color: rgb(194, 118, 40);
       }

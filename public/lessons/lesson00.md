@@ -4,9 +4,10 @@
 
 - [Introduction](#introduction)
 - [About this course](#about-this-course)
-- [Setup](#setup)
+- [IDE Setup: Wing 101](#ide-setup-wing-101)
   - [Optional Additional Setup](#optional-additional-setup)
-- [Small tour around Wing 101](#small-tour-around-wing-101)
+  - [Small tour around Wing 101](#small-tour-around-wing-101)
+- [DMOJ: Modern Online Judge](#dmoj-modern-online-judge)
 
 ## Introduction
 
@@ -18,11 +19,11 @@ Because it really seems like "technology is everywhere", some people have argued
 
 Again, this course will introduce you to the basics of programming. Python is the programming language used throughout the course, but note that **this course is not focused on learning how to code in Python.** Instead, this will introduce you to the field of programming. Python has so many different major real-world applications such as data science, artificial intelligence, etc., but this course is not very focused on such topics. However, if you do well in this course, learning the real-world applications on your own should be a lot easier.
 
-Do not worry if you have never touched programming before. This course was written with the assumption that you have **little to no prior knowledge of programming**. However, though not required, it is *highly recommended* that you would consider yourself confident in **mathematics**. It is likely that if you have strong logical thinking and problem-solving skills, you may excel at becoming a better programmer. On the contrary, poor logical thinking and problem-solving skills may make this course more challenging. Do not expect that this course is simply about reading notes and memorizing them; this course will involve a lot of exercises to train you to become a better programmer.
+Do not worry if you have never touched programming before. This course was written with the assumption that you have **little to no prior knowledge of programming**. However, though not required, it is *highly recommended* that you would consider yourself at least decently confident in **mathematics**. If you have strong logical thinking and problem-solving skills, it is likelier that you may excel at becoming a better programmer. On the contrary, poor logical thinking and problem-solving skills may make this course more challenging. Do not expect that this course is simply about reading notes and memorizing them; this course will involve a lot of exercises to train you to become a better programmer.
 
 <b class="important-note"></b> Programming is often challenging. There can be some cases where people take several hours or even days just to solve a simple problem. Therefore, it can get stressful at times to the point that it can damage your health. While learning and practicing, be sure to take frequent breaks.
 
-## Setup
+## IDE Setup: Wing 101
 
 In order to begin your programming journey, you will (of course) require some software installed on your computer. An **integrated development environment (IDE)** is a software used for coding along with many other features in order to aid a programmer. There are many IDE's out there, but if you have no idea which IDE to download, I suggest you use **Wing 101** (see setup links below from University of Waterloo's CS 116 course):
 
@@ -43,7 +44,7 @@ You may or may have not heard of the stereotype that "programmers always use dar
 3. Click the "Color Palette" dropdown to see a variety of colour themes you can use. Select whichever one you want, then click "Apply". I highly suggest you use a theme with darker colours such as "Dracula", "One Dark", "Positronic", "Solarized - Dark", etc. You can try them out on your own.
 4. Click "OK" to close.
 
-## Small tour around Wing 101
+### Small tour around Wing 101
 
 So let's start off by taking you through a small exploration of your IDE:
 
@@ -55,3 +56,22 @@ If you followed the setup, you may have ended up with Wing looking like this (No
   - The thin vertical line in the middle is not "splitting" that area into two windows: it just serves as a guideline telling you that you are encouraged to not have code pass that line. For now you can ignore it.
 - The area at the bottom right is called your **Python Shell** (or simply the *shell*), which is used to interactively evaluate single Python expressions one-by-one.
 
+## DMOJ: Modern Online Judge
+
+As mentioned before, to become a better programmer, you will need to practice. A lot. In these lessons, there will also be links to online exercise problems from an external site called [**DMOJ: Modern Online Judge**](https://dmoj.ca/accounts/register). Create your account on that to allow submissions (make sure you use a real email for verification purposes!).
+
+Once you create an account, you will have access to a very large list of practice problems, ranging from very easy to extremely difficult. Don't worry: throughout the lessons, you will be provided links to the appropriate practice problems.
+
+Let's have a simple example on how to use DMOJ:
+
+1. One of the easiest problems found on DMOJ is called [Hello, World!](https://dmoj.ca/problem/helloworld). Go to that link.
+2. Click **Submit solution** on the right side of the page. You should then see a large text area where you can input text.
+3. Enter this one single line of code into the text area.
+   ```python
+   print("Hello, World!")
+   ```
+   
+   <b class="important-note"></b> Make sure that the code you place in that text area is **exactly** as shown above. If it's just a bit off, it may be incorrect.
+4. Ensure that the dropdown menu just underneath the text area has **Python 3** in bold, followed by the version (e.g. python3 3.8.2). If it's not, click the dropdown, then select **Python 3**
+5. Click **Submit!**
+6. If you see a small green checkmark and the test case's status says **AC**, then you did everything correctly. If you see a red X, click the **Resubmit** button, and ensure you completed steps 3 and 4 correctly. If the test case's status says **WA**, it probably means the text `"Hello, World!"` was not exact. If the status is something else like **IR**, it means something else in your code is wrong.

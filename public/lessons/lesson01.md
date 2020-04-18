@@ -90,7 +90,7 @@ _____
 _____
 ```
 
-<b class="important-note" /> The string `"42"` is **not** the same as the number `42` because the data types are different.
+<b class="important-note"></b> The string `"42"` is **not** the same as the number `42` because the data types are different. `"42"` is a **string** consisting of the two characters `"4"` and `"2"`; `42` is the number itself.
 
 We will learn more about strings in-depth in a later lesson. For now, most of our examples will be using numbers.
 
@@ -103,7 +103,9 @@ Let's try that out in the shell (Note that when you define a variable with a new
 ```python
 >>> a = 6
 ```
+
 Now see the result when you enter each expression below:
+
 ```python
 >>> a
 _____
@@ -128,14 +130,15 @@ _____
 _____
 ```
 
-**Warning**: if you want to assign a value to a variable, the variable name itself must be to the left of the equal sign. Therefore, the following expression is syntactically incorrect:
+<b class="important-note"></b> if you want to assign a value to a variable, the variable name itself must be to the left of the equal sign. Therefore, the following expression is syntactically incorrect:
+
 ```python
 >>> a + 3 = b
 ```
 
-Moreover, when naming a variable, names can only have letters, digits, and the underscore character `_`, and the first character cannot be a digit. Therefore `enoch_poon`, `enOCH11`, `my_var123`, etc. are valid, but `-a`, `3d`, `r2.d2`, etc. are **invalid**. Other **invalid** variable names include Python keywords (which you will learn later in this course) such as `if`, `while`, `for`, `in`, etc. On Wing, a Python keyword will be shown in bold and in a different colour. If that happens, then that means it's an invalid variable name.
+Moreover, when naming a variable, names can only have letters, digits, and the underscore character `_`, and the first character cannot be a digit. Therefore `enoch_poon`, `enOCH11`, `my_var123`, etc. are **valid**, but `-a`, `3d`, `r2.d2`, etc. are **invalid**. Other **invalid** variable names include Python keywords (which you will learn later in this course) such as `if`, `while`, `for`, `in`, etc. On Wing, a Python keyword will be shown in bold and in a different colour. If that happens, then that means it's an invalid variable name.
 
-<b class="self-study" /> What do you think is going on here?
+<b class="self-study"></b> What do you think is going on here?
 ```python
 >>> b = 4
 >>> b = b + 6
@@ -159,7 +162,7 @@ If you understand what's going on up in the above interactions, you can move on 
 | `a **= 5` | `a = a ** 5`|
 
 
-<b class="important-note" /> Guess what is returned from this interaction. Is the final value of `b` equal to 5 or 7? After you made your guess, try entering it in the shell:
+<b class="important-note"></b> Guess what is returned from this interaction. Is the final value of `b` equal to 5 or 7? After you made your guess, try entering it in the shell:
 
 ```python
 >>> a = 5
@@ -176,27 +179,32 @@ What's happening is that although the value of `a` changed after setting `b = a`
 
 **Printing**, in the world of programming, means sending text output to a "console". In Wing 101, the console is actually in the shell, but in some environments, it could be somewhere else. For now, we will stick with printing numbers.
 
-This time, we will actually be writing code in the **editor** (Not the shell), where you can write and execute several Python expressions at once. Create a new Python file by clicking the blue paper icon at the top left (or Ctrl+N for Windows users, I'm pretty sure it would be Command+N for Mac users. Alternatively, if you still have the line `print("Hello World")` from when you did the setup, you can just get rid of that line instead of creating a new file), and paste the following lines of code in your editor:
+This time, we will actually be writing code in the **editor** (The large area in the middle of the Wing window, not the Shell), where you can write and execute several Python expressions at once. Create a new Python file by clicking the blue paper icon at the top left (or Ctrl+N for Windows users, I'm pretty sure it would be Command+N for Mac users. Alternatively, if you still have the line `print("Hello World")` from when you did the setup, you can just get rid of that line instead of creating a new file), and paste the following lines of code in your editor:
+
 ```python
 a = 3
 print(a)
 ```
+
 Then, save your code somewhere in your computer (preferably create a new folder somewhere you can easily access just for Python code used in this course). Name your file `my_first_code.py` (Note that Python code always have the file extension `.py`).
 
 Next, run this code by clicking the large green Play button at the top. Wing should look somewhat like this (Notice the number 3 is printed in the shell as well):
+
 ![3 is printed in the shell](images/01-myfirstcode.PNG)
 
-You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console(values passed inside the brackets are called **arguments**).
+You just used the `print` function, which outputs whatever is passed inside the brackets in one line to the console (values passed inside the brackets are called **arguments**).
 
-<b class="important-note" /> When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
+<b class="important-note"></b> When you used the shell to evaluate expressions, the resulting values are *returned*. However, though they may appear very similar, *printing* a value is *not* the same as *returning* a value. In other words, these two are different:
+
 ```python
 >>> 3 + 5
 >>> print(3 + 5)
 ```
+
 One of them simply evaluates an expression, while the other one prints to the console.
 
 
-<b class="self-study" /> Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
+<b class="self-study"></b> Change your code so it becomes each of these code snippets below. After running each of them, determine what you see in the shell (Note that sometimes nothing will be printed, and sometimes an error would be produced):
 
 1. ```python
    a = 3
@@ -218,6 +226,8 @@ One of them simply evaluates an expression, while the other one prints to the co
 4. ```python
    a = 3
    print(a)
+   a = 4
+   print(a)
    print(a + 4)
    print(a * 1)
    ```
@@ -235,8 +245,11 @@ One of them simply evaluates an expression, while the other one prints to the co
    ```
 6. ```python
    a = 3
-   b = a + 400
+   b=a+400 # You also do NOT need to add spacing between variables and operators
+   # The above line is still the same as b = a + 400,
+   # but spacing is always considered to be better practice.
    c = a + b
+   c
    ```
 7. ```python
    a = 3
@@ -293,7 +306,7 @@ In Python, there are other functions that you may use to return different values
    >>> abs(x + y)
    5
    ```
-2. `int(x)` takes either a number or a string `x` and returns its integer representation of `x`:
+2. `int(x)` takes either a number or a string `x` and returns the integer representation of `x`:
      - If `x` is a number, `int(x)` returns the same number but **without any digits after the decimal point** (Note that this **does not mean** `x` is rounded to the nearest unit; it instead returns `x` **rounded towards 0**. Therefore it rounds down for positive numbers and rounds up for negative numbers)
      - If `x` is a string, `int(x)` returns `x` represented as an integer. Note that `x` cannot be a string that includes a decimal point.
 
@@ -315,8 +328,34 @@ In Python, there are other functions that you may use to return different values
    >>> int("anything else")
    ERROR
    ```
-
-3. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
+3. `float(x)` takes either a number or a string `x` and returns the **float** representation.
+   
+   ```python
+   >>> float(3)
+   3.0
+   >>> float(3.3)
+   3.3
+   >>> float("3.45")
+   3.45
+   >>> float("3")
+   3.0
+   ```
+5. `str(x)` returns `x` in string representation. Note that `x` can be anything. This can be useful when needing to add a number and a string together. You cannot directly add a number and a string together; you must use the `str` function to get the number as a string.
+   
+   ```python
+   >>> str(3)
+   '3'
+   >>> str(4.4)
+   '4.4'
+   >>> str('already a string')
+   'already a string'
+   >>> '3 + 4 is ' + 7 + '.'
+   ERROR
+   >>> '3 + 4 is ' + str(7) + '.'
+   '3 + 4 is 7.' 
+   ```
+   
+6. `max(a, b)` takes two numbers `a` and `b` and returns the greater of the two numbers. For example:
 
    ```python
    >>> max(3, 6)
@@ -331,7 +370,7 @@ In Python, there are other functions that you may use to return different values
    300
    ```
 
-4. `min(a, b)` takes two numbers `a` and `b` and returns the lesser of the two numbers. For example:
+7. `min(a, b)` takes two numbers `a` and `b` and returns the lesser of the two numbers. For example:
    ```python
    >>> min(3, 6)
    3
@@ -388,13 +427,13 @@ b = 20
 c = 300
 
 middle = _______
-print(middle)
+print("The middle number is " + str(middle))
 ```
 
 Write an expression for `middle` such that running this program prints the *middle number* of `a`, `b`, and `c`. For example, with the values of `a`, `b`, and `c` above, it should print:
 
 ```
-100
+The middle number is 100
 ```
 
 However, if you modify the first three lines of your code to
@@ -408,7 +447,7 @@ c = 101
 Then running your program should print:
 
 ```
-100
+The middle number is 100
 ```
 
 And if your first three lines were
@@ -422,7 +461,7 @@ c = -3
 Then running your program should print:
 
 ```
--3
+The middle number is -3
 ```
 
 You may optionally create a new variable that returns something in terms of `a`, `b`, `c`, or some combination of them so that you can use it when computing `middle`. Again, this step is optional.
