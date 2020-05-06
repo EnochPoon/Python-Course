@@ -203,7 +203,7 @@ def has_even_digit(n):
         if num % 2 == 0:
             return True 
             # Again, a return statement will always return the value and 
-            # exit the function immediately, even if there appears to 
+            # exit the function IMMEDIATELY, even if there appears to
             # be more to the function.
         num //= 10
     return False
@@ -213,8 +213,9 @@ def has_even_digit(n):
 
 1. [Tournament Selection](https://dmoj.ca/problem/ccc16j1)
 2. [Hailstone Numbers](https://dmoj.ca/problem/hailstone)
-3. [Sumac Sequences](https://dmoj.ca/problem/ccc11j3)
-4. [Lucky Number](https://dmoj.ca/problem/hkccc08j2)
+3. [Grumpy Dwarf](https://dmoj.ca/problem/dmopc15c2p1)
+4. [Sumac Sequences](https://dmoj.ca/problem/ccc11j3)
+5. [Lucky Number](https://dmoj.ca/problem/hkccc08j2)
 
 
 ## The `for` loop
@@ -424,3 +425,4 @@ Use `for` loops for each of these
 2. [Mr. White's Carnival](https://dmoj.ca/problem/ppwindsor18p1)
 3. [Shifty Sum](https://dmoj.ca/problem/ccc17j2)
 4. [RSA Numbers](https://dmoj.ca/problem/ccc05j2)
+5. [Deficient, Perfect, and Abundant](https://dmoj.ca/problem/ccc96s1)

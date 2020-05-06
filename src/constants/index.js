@@ -4,11 +4,11 @@ export const LESSON_TITLES = [
     "Input",
     "Conditional Statements",
     "Functions",
-    "Loops"
+    "Loops",
+    "Strings"
 ];
 
 export const FUTURE_LESSONS = [
-    "Strings",
     "Lists",
     "Sets and Dictionaries",
     "Classes and Objects"
